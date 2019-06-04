@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="stack.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    var priority_map = {
+      '+':1,
+      '-':1,
+      '*':2,
+      '/':2,
+    };
+
+    // function infix_exp_2_infix_exp(arr) {
+    //     console.log(arr)
+    //     var stack = new Stack(); // 放运算符的
+    //     var postfix_list = [];   // 放数字的
+    //     for (var i =0 ;i<arr.length;i++) {
+    //         var item = arr[i]
+    //         if (!isNaN(item)){
+    //             postfix_list.push(item)
+    //         } else if(item=='(') {
+    //             stack.push(item)
+    //         } else if (item ==')') {
+    //             while (stack.top()!='(') {
+    //                 postfix_list.push(stack.pop())
+    //             }
+    //             stack.pop()
+    //             // console.log(stack.pop())
+    //         } else {
+    //             // console.log(item)
+    //             // postfix_list.push(item)
+    //             while (!stack.isEmpty()&&['+','-','*','/'].indexOf(stack.top())>=0
+    //             &&priority_map[stack.top()]>=priority_map[item]) {
+    //                 postfix_list.push(stack.pop())
+    //             }
+    //             stack.push(item)
+    //         }
+    //     }
+    //     while (!stack.isEmpty()) {
+    //         postfix_list.push(stack.pop())
+    //     }
+    //     console.log(postfix_list)
+    //    // console.log(add(postfix_list));
+    // //     console.log(stack)
+    // }
+
+    function infix_exp_2_infix_exp(arr) {
+            var stack = new Stack(); // 放运算符的
+            var postfix_list = [];   // 放数字的
+            for (var i =0 ;i<arr.length;i++) {
+                var item = arr[i];
+                if (!isNaN(item)) {
+                    postfix_list.push(item)
+                } else if (item=='(') {
+                    stack.push(item)
+                }else if( item==')') {
+                    while (stack.top() != '(') {
+                        postfix_list.push(stack.pop())
+                    }
+                    stack.pop()
+                } else {
+                    //判断运算符等级
+                    while (!stack.isEmpty()&&['+','-','*','/'].indexOf(stack.top())>=0&&
+                    priority_map[stack.top()]>priority_map[item]){
+                        postfix_list.push(stack.pop())
+                    }
+                    stack.push(item)
+                }
+            }
+            while (!stack.isEmpty()) {
+                postfix_list.push(stack.pop())
+            }
+            console.log(postfix_list)
+    }
+
+
+    function add(str) {
+        var stack = new Stack();
+        for (var a = 0 ;a<str.length;a++) {
+            if (isNaN(str[a])) {
+                var num2 = stack.pop();
+                var num1 = stack.pop();
+                stack.push(eval(num1+str[a]+num2));
+            } else {
+                stack.push(str[a])
+            }
+        }
+        console.log(stack.arr())
+        return stack.pop()
+    }
+    var a = '1+2';
+    var b = '(1+4)*(5-3)';
+    var c = '(1+(4+5+3)/4-3)+(6+8)*3';
+    console.log(eval(c))
+    infix_exp_2_infix_exp([].slice.call(c));
+</script>
+</html>

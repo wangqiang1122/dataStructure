@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="stack.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    // var a = new Stack();
+    // a.push(['wwww','sssss']);
+    // a.push('3333');
+    // // console.log(a.pop());
+    // console.log(a.size())
+    // a.clear();
+    var str  = '()()(dasdas(dasdas)d)(';
+    // console.log(str.match(/\)/g));
+    // console.log(str.match(/\(/g));
+    
+    function is_leagl(str) {
+        var stack = new Stack();
+        for (var a =0; a<str.length;a++) {
+            if (str.charAt(a)==='(') {
+                stack.push(str.charAt(a))
+            } else if (str.charAt(a)===')') {
+                if (stack.isEmpty()) {
+                    console.log('不合法 缺少左括号')
+                    return false
+                } else {
+                    stack.pop();
+                }
+            }
+        }
+        return stack.isEmpty()
+    }
+    console.log(is_leagl(str))
+</script>
+</html>

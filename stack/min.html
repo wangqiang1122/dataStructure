@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="stack.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+  var str = ['4','13','5'];
+
+  function min(str) {
+      var stack = new Stack();
+      for (var a = 0 ;a<str.length;a++) {
+          stack.push(str[a])
+      }
+     return stack.min()
+  }
+  console.log(min(str))
+
+</script>
+</html>

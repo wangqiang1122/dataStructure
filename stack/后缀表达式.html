@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="stack.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+  var str = ['4','13','5','/','+'];
+
+  function add(str) {
+      var stack = new Stack();
+      for (var a = 0 ;a<str.length;a++) {
+          if (isNaN(str[a])) {
+              var num2 = stack.pop();
+              var num1 = stack.pop();
+              // if (stack.size()===0) {
+              //     // return eval(num1+str[a]+num2)
+              //     stack.push(Math.floor(eval(num1+str[a]+num2)))
+              //     return stack.pop()
+              // } else {
+              //     stack.push(Math.floor(eval(num1+str[a]+num2)))
+              // }
+              stack.push(Math.floor(eval(num1+str[a]+num2)));
+          } else {
+              stack.push(str[a])
+          }
+      }
+     return stack.pop()
+  }
+  console.log(add(str))
+
+</script>
+</html>
