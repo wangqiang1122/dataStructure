@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="queue.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    function expf(num) {
+        var queue = new Queue();
+        var index = 0;
+        queue.enqueue(1)
+        queue.enqueue(1)
+        while (index<num-2) {
+                var itemI = queue.dequeue();
+                var itemE = queue.head();
+                queue.enqueue(itemI+itemE);
+                index++
+
+        }
+
+        console.log(queue.me())
+
+    }
+
+    expf(20)
+</script>
+</html>

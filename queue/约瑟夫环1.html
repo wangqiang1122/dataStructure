@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./queue.js"></script>
+</head>
+<body>
+
+</body>
+
+<script>
+    function exp_leaer(arr) {
+        var queue = new Queue();
+        for (var i=0;i<arr;i++){
+            queue.enqueue(i);
+        }
+        var index = 0;
+        while (queue.size()!==1) {
+            var item = queue.dequeue();
+            index++;
+            if (index%3!==0) {
+                queue.enqueue(item)
+            }
+        }
+        return queue.head()
+    }
+
+    console.log(exp_leaer(100))
+</script>
+</html>

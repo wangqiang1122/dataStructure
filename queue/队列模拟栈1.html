@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="queue.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    function Stack() {
+        var queue1 = new Queue();
+        var queue2 = new Queue();
+        var data_queue = null;
+        var empty_queue = null;
+
+        this.init=function () {
+          if ((queue1.isEmpty()&&queue2.isEmpty())||(!queue1.isEmpty()&&queue2.isEmpty())){
+              data_queue = queue1;
+              empty_queue = queue2;
+          }  else {
+              data_queue = queue2;
+              empty_queue = queue1;
+          }
+        };
+
+        // 追加数据
+        this.push = function (str) {
+            this.init();
+            data_queue.enqueue(str)
+        };
+        // 挤出最后一个元素
+        this.pop = function () {
+            this.init();
+            while (data_queue.size()>1) {
+                empty_queue.enqueue(data_queue.dequeue())
+            }
+            return data_queue.dequeue();
+          // if (queue2.isEmpty()) {
+          //     while (queue1.size()>1) {
+          //         queue2.enqueue(queue1.dequeue())
+          //     }
+          //     return queue1.dequeue()
+          // } else if (queue1.isEmpty()) {
+          //     while (queue2.size()>1) {
+          //         queue1.enqueue(queue2.dequeue())
+          //     }
+          //     return queue2.dequeue()
+          // }
+        };
+        //返回顶部元素
+        this.top = function () {
+            if (queue1.isEmpty()){
+                return queue2.head()
+            } else {
+                return queue1.head()
+            }
+        }
+        // 栈里有几个元素
+        this.size = function () {
+            if (queue1.isEmpty()){
+                return queue2.size()
+            } else {
+                return queue1.size()
+            }
+        }
+        
+    }
+
+    var arr = new Stack();
+
+    arr.push('1')
+    arr.push('2')
+    arr.push('3')
+    console.log(arr.pop())
+    arr.push('6')
+    arr.push('7')
+    console.log(arr.pop())
+
+</script>
+</html>
