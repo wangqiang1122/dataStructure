@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="queue.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    var maze_array = [
+        [0,0,1,0,0,0,0],
+        [0,0,1,1,0,0,0],
+        [0,0,0,0,1,0,0],
+        [0,0,0,1,1,0,0],
+        [1,0,0,0,1,0,0],
+        [1,1,1,0,0,0,0],
+        [1,1,1,0,0,0,0],
+    ]
+
+    function run(maze) {
+        var h = 2; //竖 目标3
+        var r = 1; // 横  目标是5
+        var queue = new Queue();
+        var t = true;
+
+        function Hr(h ,r) {
+            if (((h+1)<=(maze.length-1))&&((h-1)>=0)) {
+                console.log(r)
+                if (maze[h+1][r]==0) {
+                    queue.enqueue([h+1,r])
+                    maze[h+1][r] =  maze[h][r]+1
+                }
+                if (maze[h-1][r]==0) {
+                    queue.enqueue([h-1,r])
+                    maze[h-1][r] = maze[h][r]+1
+                }
+            }
+            if ((r-1)>=0&&(r+1<=(maze[h].length-1))) {
+                if (maze[h][r+1]==0) {
+                    queue.enqueue([h,r+1])
+                    maze[h][r+1] = maze[h][r]+1
+                }
+                if (maze[h][r-1]==0) {
+                    queue.enqueue([h,r-1])
+                    maze[h][r-1] = maze[h][r]+1
+                }
+            }
+        }
+        Hr(h,r)
+
+           var index =0;
+           while (t) {
+               var items = queue.head();
+               if (items[0]===3&&items[1]===5) {
+                   t = false
+               } else {
+                   var item = queue.dequeue()
+                   console.log(item[0]);
+                   console.log(item[1])
+                   Hr(item[0],item[1])
+               }
+
+           }
+        console.log(queue.me())
+        var a = queue.head();
+        console.log(maze[a[0]][a[1]])
+        console.log(maze)
+        // while (h!==3&&r!==5) {
+        // }
+    }
+    run(maze_array)
+</script>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./stack.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    function Queue() {
+        var stact1 = new Stack();
+        var stact2 = new Stack();
+        var data_queue = '';
+        var data_empty = '';
+        this.init = function () {
+            if ((stact1.isEmpty()&&stact2.isEmpty())||(!stact1.isEmpty()&&stact2.isEmpty())) {
+                data_queue = stact1;
+                data_empty = stact2
+            } else {
+                while (!stact2.isEmpty()) {
+                    stact1.push(stact2.pop())
+                }
+                data_queue = stact1;
+                data_empty = stact2
+            }
+        }
+        this.enqueue = function (str) {
+          this.init();
+          data_queue.push(str)
+        }
+        this.dequeue = function () {
+            this.init();
+            while (data_queue.size()>1) {
+                data_empty.push(data_queue.pop())
+            }
+            return data_queue.pop()
+        }
+        this.size = function () {
+            this.init();
+            return data_queue.size()
+        }
+        this.head = function () {
+          this.init();
+          return data_queue.head()
+        }
+        this.me = function () {
+            this.init();
+            return data_queue.arr()
+        }
+    }
+
+    var Queue = new Queue();
+    Queue.enqueue('2')
+    Queue.enqueue('5')
+    Queue.enqueue('6')
+    console.log(Queue.dequeue())
+    Queue.enqueue('22')
+    console.log(Queue.dequeue());
+    console.log(Queue.head())
+    // console.log(Queue.size())
+</script>
+</html>

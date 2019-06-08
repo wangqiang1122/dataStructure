@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./stack.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    function Queue() {
+        var stact1 = new Stack();
+        var stact2 = new Stack();
+
+        this.enqueue = function (str) {
+          stact1.push(str)
+        }
+        this.dequeue = function () {
+            this.initS();
+            return stact2.pop()
+        }
+        this.size = function () {
+            return stact1.size()+ stact2.size()
+        }
+        this.head = function () {
+            this.initS()
+            return stact2.top()
+        }
+        this.initS = function () {
+            if (stact2.isEmpty()) {
+                while (!stact1.isEmpty()) {
+                    stact2.push(stact1.pop())
+                }
+            }
+        }
+    }
+
+    var Queue = new Queue();
+    Queue.enqueue('2')
+    Queue.enqueue('5')
+    Queue.enqueue('6')
+    console.log(Queue.dequeue())
+    Queue.enqueue('y')
+    Queue.enqueue('7')
+    Queue.enqueue('a')
+    console.log(Queue.dequeue())
+    console.log(Queue.dequeue())
+    console.log(Queue.head())
+    // console.log(Queue.size())
+</script>
+</html>

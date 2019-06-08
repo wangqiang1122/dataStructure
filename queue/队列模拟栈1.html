@@ -36,6 +36,7 @@
             while (data_queue.size()>1) {
                 empty_queue.enqueue(data_queue.dequeue())
             }
+            console.log(empty_queue.me())
             return data_queue.dequeue();
           // if (queue2.isEmpty()) {
           //     while (queue1.size()>1) {
@@ -65,7 +66,11 @@
                 return queue1.size()
             }
         }
-        
+        this.me = function () {
+            this.init();
+            return data_queue.me()
+        }
+
     }
 
     var arr = new Stack();
@@ -73,10 +78,15 @@
     arr.push('1')
     arr.push('2')
     arr.push('3')
+    console.log(arr.me())
     console.log(arr.pop())
-    arr.push('6')
-    arr.push('7')
-    console.log(arr.pop())
-
+    console.log(arr.me())
+    // arr.push('6')
+    // console.log(arr.me())
+    // arr.push('7')
+    // console.log(arr.pop())
+    // console.log(arr.pop())
+    // console.log(arr.pop())
+    // console.log(arr.pop())
 </script>
 </html>
