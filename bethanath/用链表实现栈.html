@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="bethanath1.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    function Stack() {
+        var list = new linkList();
+        this.push = function (str) {
+            list.append(str)
+        }
+        this.pop= function () {
+            return list.remove_tail()
+        }
+        this.length = function () {
+            return list.length()
+        }
+        this.top = function () {
+            return list.tail()
+        }
+    }
+    var a = new Stack();
+    a.push('22')
+    a.push('333')
+
+    console.log(a.top().data)
+    console.log(a.length())
+
+</script>
+
+</html>
