@@ -182,7 +182,19 @@ function linkList() {
       item.next.next = item;
       item.next = null
       return  new_head
+    }
+    // 从尾到头打印链表
+    this.reverse = function (head) {
+        var arr = [];
 
+        function next(head) {
+            if (head.next!=null) {
+                next(head.next)
+            }
+            arr.push(head)
+        }
+        next(head)
+        return arr
     }
 }
 
