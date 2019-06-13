@@ -8,28 +8,19 @@
 
 </body>
 <script>
-
-    function reset(arg) {
-        let all
-        var num
-        if ({}.toString.call(arg).indexOf('Array')!=-1) {
-            all = arg;
-            num = arg[length-1];
-         } else {
-            all = [arg];
-            num = arg
+    var a = [1,23,4,5];
+    var index = 0;
+    function res(num) {
+       if (num===5) {
+           return num
        }
-       console.log(all)
-       console.log(num)
-      if (num==0) {
-          return
-      } else {
-          num-=1;
-          all.push(num)
-          reset.call(null,all)
-      }
-      // console.log(all)
+        index++
+       var b = res(a[index]);
+       console.log(b)
+       console.log(num);
+       return 'a'
     }
-    reset(10)
+
+    res(a[index])
 </script>
 </html>

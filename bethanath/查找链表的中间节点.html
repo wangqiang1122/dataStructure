@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    /**
+     * 思路：也是设置两个游标节点，
+     * 游标节点A走的快
+     * 游标节点B走的慢
+     * A比B走的快一倍
+     *
+     * **/
+    // 链表
+    function Node(data) {
+        this.data = data;
+        this.next = null;
+    }
+
+    var node1 = new Node(0);
+    var node2 = new Node(1);
+    var node3 = new Node(2);
+    var node4 = new Node(3);
+    var node5 = new Node(4);
+    var node6 = new Node(6);
+    node1.next = node2;
+    node2.next = node3;
+    node3.next = node4;
+    node4.next = node5;
+    node5.next = node6;
+    function find_middle(head) {
+        var fast = head;
+        var slow = head;
+        /**
+         * 判断条件fast 不能是null fast.next不能是null
+         */
+        while (fast&&fast.next) {
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        console.log(slow)
+    }
+    find_middle(node1)
+
+
+</script>
+</html>

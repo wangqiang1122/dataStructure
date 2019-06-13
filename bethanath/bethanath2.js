@@ -147,6 +147,12 @@ function linkList() {
 
     }
     // while的反转  迭代反转
+
+    /**
+     * while 循环反转
+     *  相当于把指向箭头方向反转
+     *
+     * */
     this.reverse_iter = function (head) {
        if (!head) {
            return null
@@ -163,9 +169,18 @@ function linkList() {
            cuur_node = next_node; // 下一个节点是 curr_node
            console.log(cuur_node)
        }
-       console.log(cuur_node)
        return pre_node
     }
+
+    /**
+     * 递归翻转思路：利用递归特性
+     *     递归是函数入栈 里面的参数也是可以保留的的特性对
+     *     属性进行操作
+     *     item 永远是 new_head 前一个 因为递归结束的最后一次被return
+     *     递归函数返回的值永远是上一次的值 因为栈的特性 后进先出
+     *
+     */
+
     // 递归反转
     this.reverse_digui = function (item) {
         // console.log(item)

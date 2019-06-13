@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e1bb39d-05a1-4d27-ac69-da07c5e75cee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bethanath/bethanath3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bethanath/双向链表.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bethanath/查找链表的中间节点.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bethanath/两个有序链表合并.html" beforeDir="false" afterPath="$PROJECT_DIR$/bethanath/两个有序链表合并.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bethanath/bethanath2.js" beforeDir="false" afterPath="$PROJECT_DIR$/bethanath/bethanath2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bethanath/递归帅锅.html" beforeDir="false" afterPath="$PROJECT_DIR$/bethanath/递归帅锅.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bethanath/链表翻转.html" beforeDir="false" afterPath="$PROJECT_DIR$/bethanath/链表翻转.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queue/迷宫.html" beforeDir="false" afterPath="$PROJECT_DIR$/queue/迷宫.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,31 +43,31 @@
     <session id="-729982035">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="9" />
+          <entry key="html" value="15" />
           <entry key="js" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="9" />
+          <entry key="HTML" value="15" />
           <entry key="JavaScript" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="2473" />
-          <entry key="js" value="2676" />
+          <entry key="html" value="4393" />
+          <entry key="js" value="2875" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2473" />
-          <entry key="JavaScript" value="2676" />
+          <entry key="HTML" value="4393" />
+          <entry key="JavaScript" value="2875" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.opened" value="3" />
@@ -76,17 +80,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bethanath/bethanath1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            <state relative-caret-position="30">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bethanath/bethanath2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="62" column="30" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="30" />
+            <state relative-caret-position="297">
+              <caret line="166" column="19" selection-start-line="166" selection-start-column="11" selection-end-line="166" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -94,17 +98,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bethanath/两个有序链表合并.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-232">
+            <state relative-caret-position="165">
               <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bethanath/查找单链表中倒数第n个节点.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="120">
+              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bethanath/查找链表的中间节点.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bethanath/递归帅锅.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bethanath/双向链表.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bethanath/链表翻转.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/queue/迷宫.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="50" column="15" lean-forward="true" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -116,47 +165,6 @@
               <caret line="67" column="32" lean-forward="true" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="32" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bethanath/用链表实现栈.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bethanath/递归帅锅.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bethanath/链表翻转.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bethanath/用链表实现队列.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/queue/stack.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -177,15 +185,18 @@
         <option value="$PROJECT_DIR$/bethanath/琏表2.html" />
         <option value="$PROJECT_DIR$/bethanath/用链表实现队列.html" />
         <option value="$PROJECT_DIR$/bethanath/用链表实现栈.html" />
-        <option value="$PROJECT_DIR$/bethanath/递归帅锅.html" />
         <option value="$PROJECT_DIR$/bethanath/链表反转.html" />
-        <option value="$PROJECT_DIR$/bethanath/链表翻转.html" />
         <option value="$PROJECT_DIR$/bethanath/bethanath1.js" />
         <option value="$PROJECT_DIR$/bethanath/从尾到头打印链表.html" />
         <option value="$PROJECT_DIR$/bethanath/两个有序链表合并.html" />
-        <option value="$PROJECT_DIR$/bethanath/bethanath2.js" />
         <option value="$PROJECT_DIR$/bethanath/查找单列表中倒数第n个节点.html" />
         <option value="$PROJECT_DIR$/bethanath/查找单链表中倒数第n个节点.html" />
+        <option value="$PROJECT_DIR$/bethanath/查找链表的中间节点.html" />
+        <option value="$PROJECT_DIR$/bethanath/双向链表.html" />
+        <option value="$PROJECT_DIR$/queue/迷宫.html" />
+        <option value="$PROJECT_DIR$/bethanath/递归帅锅.html" />
+        <option value="$PROJECT_DIR$/bethanath/链表翻转.html" />
+        <option value="$PROJECT_DIR$/bethanath/bethanath2.js" />
       </list>
     </option>
   </component>
@@ -196,7 +207,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="92" />
+    <option name="x" value="93" />
     <option name="y" value="23" />
     <option name="width" value="1064" />
     <option name="height" value="701" />
@@ -221,11 +232,6 @@
               <item name="dataStructure" type="b2602c69:ProjectViewProjectNode" />
               <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
               <item name="bethanath" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="queue" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -301,15 +307,15 @@
       <workItem from="1559956654460" duration="96000" />
       <workItem from="1560215902896" duration="13952000" />
       <workItem from="1560333519907" duration="1316000" />
-      <workItem from="1560391167439" duration="10986000" />
+      <workItem from="1560391167439" duration="19542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39206000" />
+    <option name="totallyTimeSpent" value="47762000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="92" y="23" width="1064" height="701" extended-state="0" />
+    <frame x="93" y="23" width="1064" height="701" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29913712" />
@@ -416,9 +422,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bethanath/琏表节点.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/bethanath/bethanath.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -436,20 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bethanath/递归帅锅.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bethanath/链表翻转.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bethanath/用链表实现队列.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -460,17 +449,24 @@
     <entry file="file://$PROJECT_DIR$/queue/stack.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/bethanath/bethanath1.js">
+    <entry file="file://$PROJECT_DIR$/bethanath/琏表节点.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="255">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bethanath/bethanath2.js">
+    <entry file="file://$PROJECT_DIR$/bethanath/bethanath1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="62" column="30" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="30" />
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bethanath/查找链表的中间节点.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -481,17 +477,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bethanath/两个有序链表合并.html">
+    <entry file="file://$PROJECT_DIR$/bethanath/双向链表.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-232">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        <state relative-caret-position="153">
+          <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queue/迷宫.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="50" column="15" lean-forward="true" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bethanath/查找单链表中倒数第n个节点.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="120">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bethanath/两个有序链表合并.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bethanath/递归帅锅.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bethanath/链表翻转.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bethanath/bethanath2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="166" column="19" selection-start-line="166" selection-start-column="11" selection-end-line="166" selection-end-column="19" />
         </state>
       </provider>
     </entry>

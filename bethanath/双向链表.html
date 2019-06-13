@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+
+<script>
+    /***
+     * 有一个指向上一个元素的属性
+     *
+     */
+      function BlinkList() {
+        function Node(data) {
+            this.pre = null;
+            this.data = data;
+            this.next = null;
+        }
+
+        var head = null;
+        var tail = null;
+        var length = 0;
+
+        this.append = function (str) {
+            var b = new Node(str);
+            if (head==null) {
+                head = b;
+                tail = b
+            } else {
+                b.pre = tail; //
+                tail.next = b;   // 前一个的
+                tail = b;        // 后一个
+            }
+            length+=1;
+        }
+
+        this.print = function () {
+            var cuur = head;
+            while (cuur) {
+                console.log(cuur)
+                cuur = cuur.next
+            }
+        }
+        // 在指定位置插入一个元素
+        this.insert = function (index,data) {
+            var b = new Node(data);
+            var cuur = head;
+            var num = 0;
+           if (index==0) {
+               head = b;
+               head.next = cuur;
+               cuur.pre = head
+               return
+           }
+           if ((length-1)<=index) {
+               tail.next = b;
+               b.pre = tail;
+               tail = b;
+               return
+           }
+
+           while (cuur){
+               if (num >=index) {
+                   break
+               }
+               console.log('1')
+               cuur = cuur.next;
+               num++
+           }
+           b.pre = cuur.pre;  // 过程不能乱
+           b.next = cuur;
+           cuur.pre.next = b;
+           cuur.pre = b
+
+        };
+        this.remove = function (str) {
+            var cuur = head;
+            while (cuur) {
+                if (cuur.data ==str) {
+                    break
+                }
+                cuur = cuur.next;
+            }
+            if (cuur.pre===null) {
+                head = cuur.next;
+                cuur.next.pre = null
+            } else if (cuur.next ===null) {
+                cuur.pre.next = null
+            } else {
+                cuur.next.pre = cuur.pre
+                cuur.pre.next = cuur.next
+            }
+            length-=1;
+            return cuur;
+        }
+
+      }
+   var Blink = new BlinkList();
+
+   Blink.append('22');
+   Blink.append('rr');
+    Blink.append('ff');
+    Blink.append('hh');
+   Blink.append('gg');
+    // Blink.remove('22');
+    Blink.insert(2,'我是')
+
+  // console.log(Blink.remove('rr'));
+    Blink.print()
+</script>
+</html>
