@@ -150,8 +150,10 @@ function linkList() {
 
     /**
      * while 循环反转
-     *  相当于把指向箭头方向反转
-     *
+     *  相当于把指向箭头方向反转 1>2>3>4;
+     *  第一步 1<2>3>4
+     *  第两步 1<2<3>4
+     *  第三步 1<2<3<4
      * */
     this.reverse_iter = function (head) {
        if (!head) {
