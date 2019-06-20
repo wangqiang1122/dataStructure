@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="bitMap.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    /**
+     * 有一个数组，内容为[1,3,4,5,7,4,8,9,2,9],有些数值是重复出现的，请你改造一下bitMap
+     * 类，增加一个isRepeat(member)的方法，判断member是否重复出现，并利用该方法找出数组
+     * 中不重复的数
+     */
+
+    var arr = [1,3,4,5,7,4,8,9,2,9];
+    var bit = new BitMap(1000);
+    for (var a =0;a<arr.length;a++) {
+        bit.addMember(arr[a])
+    }
+    console.log(bit.isRepeat(9))
+</script>
+</html>
