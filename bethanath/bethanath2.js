@@ -193,7 +193,7 @@ function linkList() {
           console.log(item)
           return item
       }
-      var new_head = this.reverse_digui(item.next);
+      var new_head = this.reverse_digui(item.next); //返回的是上一次的值
       console.log(new_head)
       // console.log(item)
       item.next.next = item;
