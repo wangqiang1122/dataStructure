@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var arr = [ 6,2,8,1,4,3,7,9,10 ];
+
+    for (var a=0;a<arr.length-1;a++) {
+        for (var i=0;i<(arr.length-a);i++) {
+            if (arr[i+1]<arr[i]) {
+                var num2 = arr[i];
+                arr[i] = arr[i+1];
+                arr[i+1] = num2
+            }
+        }
+    }
+    console.log(arr)
+</script>
+</html>

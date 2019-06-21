@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="stack.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    var str = '(((dasda(dddd(dag)dadasd)())))';
+
+    var stack = new Stack();
+    //charCodeAt返回指定为位置Unicode 编码
+
+    console.log(str.charAt(1))
+    for(var a =0;a<str.length;a++) {
+        var k = str.charAt(a)
+        if (k==='(') {
+            stack.push(k)
+        } else if(k===")") {
+            if (stack.isEmpty()) {
+                console.log('不合法缺少做括号');
+            }
+            stack.pop()
+        }
+    }
+    console.log(stack.isEmpty())
+
+
+
+</script>
+</html>
