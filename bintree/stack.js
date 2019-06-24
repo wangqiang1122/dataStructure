@@ -3,7 +3,8 @@ function Stack() {
     this.type = function (item) {
         if ({}.toString.call(item).indexOf('String')!==-1
             || {}.toString.call(item).indexOf('Array')!==-1
-            || {}.toString.call(item).indexOf('Number')!==-1) {
+            || {}.toString.call(item).indexOf('Number')!==-1
+            || {}.toString.call(item).indexOf('Object')!==-1) {
             return true
         } else {
             return false;
@@ -53,3 +54,5 @@ function Stack() {
         return items;
     }
 }
+
+export default Stack
