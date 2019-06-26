@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var arr = [6,1,2,599,55,4,66,9];
+
+    for (var a=0;a<arr.length-1;a++) {
+        for (var i=0;i<arr.length-a;i++) {
+            if (arr[i]>arr[i+1]) {
+                var tmp = arr[i];
+                arr[i] = arr[i+1];
+                arr[i+1] = tmp;
+            }
+        }
+    }
+</script>
+</html>
