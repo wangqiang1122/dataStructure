@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./myheap.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    var arr = [53,17,78,9,45,65,87,23];
+    var heap = new Minheap(3);
+    for (var a=0; a<3;a++) {
+        heap.insert(arr[a])
+    }
+
+    for(var i = 3; i<arr.length;i++) {
+        if (arr[i]>heap.top()) {
+            heap.min_remove();
+            heap.insert(arr[i]);
+        }
+    }
+    console.log(heap.print())
+</script>
+</html>
