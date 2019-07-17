@@ -2,7 +2,7 @@ import Stack from './stack.js';
 
 /**
  * 二叉树节点的定义
- *
+ * 这是完全二叉树有规律的
  *
  * @param node
  * @constructor

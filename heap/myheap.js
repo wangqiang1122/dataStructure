@@ -1,12 +1,12 @@
 function Minheap(size) {
-    var heap = new Array();  // 数组
+    var heap = new Array(size);  // 数组
     var cuur_size = 0;           // 当前堆的大小
     var Max_size = size;// 堆的最大容量
     // 传入一个数组调整数据为最小堆
     this.init = function (arr) {
-        Max_size = arr.length; // 长度
-        cuur_size = Max_size;  // 长度
-        heap = new Array(arr.length)
+        // Max_size = arr.length; // 长度
+        cuur_size = arr.length;  // 长度
+        heap = new Array(Max_size)
         // 押入到数组堆中
         for (var a = 0; a<Max_size;a++) {
            heap[a]= arr[a]
@@ -47,16 +47,22 @@ function Minheap(size) {
    }
    // 插入一个元素，只能在尾部push
    this.insert = function (str) {
-       heap.push(str);
+       if (cuur_size>Max_size) {
+           return false
+       }
+       heap[cuur_size]=str;
       //找到新添加节点的父节点
-      var curr_parent = Math.floor((heap.length-2)/2); // 找到最后一个节点的父节点 也就是最后一个分支节点
-
-      shif_up(curr_parent,heap.length-1) // 传入最后一个分支节点，数组的最后索引
+      var curr_parent = Math.floor((cuur_size-1)/2); // 找到最后一个节点的父节点 也就是最后一个分支节点
+      // shif_up(curr_parent,cuur_size-1) // 传入最后一个分支节点，数组的最后索引
+      shif_up(cuur_size); //新插入元素的索引
+      cuur_size+=1;
+      return true
    }
-    function shif_up(endNum,m) {
-       var parent_index = endNum;
-       var min_child_index = m;
-       while (parent_index>=0) {
+    function shif_up(start) {
+       var child_index = start; // 新加入的节点索引
+       var parent_index =  Math.floor((cuur_size-1)/2);// 找到最后一个节点的父节点 也就是最后一个分支节点
+       var min_child_index = child_index;
+       while (min_child_index> 0) {
            if (heap[min_child_index]<heap[parent_index]) {
                var tmp = heap[parent_index];
                heap[parent_index] = heap[min_child_index];
@@ -67,8 +73,6 @@ function Minheap(size) {
                return
            }
        }
-       cuur_size+=1;
-       console.log(cuur_size)
     }
     // 删除最小值 也是就是删除顶部
     this.min_remove = function () {
@@ -78,7 +82,7 @@ function Minheap(size) {
        var end_index =cuur_size-1;
        var min = heap[0];
        heap[0] = heap[end_index];
-       console.log(heap[0])
+       // console.log(heap[0])
        cuur_size--
        shif_down(0,cuur_size-1)
        return min
