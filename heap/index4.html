@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./bigmyHeap.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    var arr = [53,17,78,965,87,23,100,111,7777777];
+    var heap = new Maxheap(50);
+    // heap.init(arr)
+    for (var a=0;a<arr.length;a++) {
+        heap.inset(arr[a])
+    }
+    heap.inset(1);
+    heap.inset(2);
+    // console.log(heap.print())
+    console.log(heap.remove_head());
+    console.log(heap.remove_head())
+    console.log(heap.remove_head())
+    console.log(heap.remove_head())
+</script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./js/hafumanHeap.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    // 概率换算成变长编码
+    var arr = [
+        { a: '0.12', b: '0.4', c: '0.15',d: '0.08', e:'0.25' }
+    ];
+
+    function CreateNode(str,rate) {
+        this.node = str;
+        this.rate = rate;
+    }
+    var heap = new Min_heap(8);
+    // heap.init(arr)
+    // console.log(heap.top())
+    for (var attr in arr[0]) {
+        var t = new CreateNode(attr,arr[0][attr]);
+        heap.inset(t)
+    }
+    // console.log(heap.remove_head());
+    // console.log(heap.remove_head());
+    // console.log(heap.remove_head());
+    // console.log(heap.remove_head());
+    // console.log(heap.remove_head());
+    // console.log(heap.length())
+
+    function NewNode(str) {
+        this.rate = str;
+        this.left = '';
+        this.right = '';
+        this.parent= '';
+    }
+
+    while (heap.length()>1) {
+        var a1 = heap.remove_head();
+        var a2 = heap.remove_head();
+        var node = new NewNode(Number(a1.rate)+Number(a2.rate));
+        node.left = a1;
+        node.right = a2;
+        heap.inset(node)
+    }
+    console.log(heap.print())
+
+</script>
+</html>

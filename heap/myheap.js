@@ -1,7 +1,7 @@
 function Minheap(size) {
-    var heap = new Array(size);  // 数组
+    var heap = new Array();  // 数组
     var cuur_size = 0;           // 当前堆的大小
-    var Max_size = size;// 堆的最大容量
+    var Max_size = size||1000;// 堆的最大容量
     // 传入一个数组调整数据为最小堆
     this.init = function (arr) {
         // Max_size = arr.length; // 长度
@@ -26,6 +26,11 @@ function Minheap(size) {
      */
    function shif_down(start,m) { // 只是单纯的对比父节点和左右子女节点 不靠全局只考虑局部
         // 从start位置下滑调整 是最后一个分支节点
+        heap = heap.filter((item)=>{
+            if (item){
+                return item
+            }
+        })
         var parent_curr = start;
         var min_child_index = (2*parent_curr)+1; // 该最后一个父节点肯定有左孩子，根据完全二叉树的定义父节点肯定有左孩子
         // 最小堆的定义父节点的值要小于等于左右孩子的值
@@ -44,6 +49,7 @@ function Minheap(size) {
                 min_child_index = (2*parent_curr)+1 // 找到新的父节点的子女节点
             }
         }
+        // console.log(heap)
    }
    // 插入一个元素，只能在尾部push
    this.insert = function (str) {
@@ -62,7 +68,7 @@ function Minheap(size) {
        var child_index = start; // 新加入的节点索引
        var parent_index =  Math.floor((cuur_size-1)/2);// 找到最后一个节点的父节点 也就是最后一个分支节点
        var min_child_index = child_index;
-       while (min_child_index> 0) {
+       while (min_child_index>0) {
            if (heap[min_child_index]<heap[parent_index]) {
                var tmp = heap[parent_index];
                heap[parent_index] = heap[min_child_index];
@@ -79,12 +85,12 @@ function Minheap(size) {
        if (cuur_size<=0) {
            return null
        }
-       var end_index =cuur_size-1;
        var min = heap[0];
-       heap[0] = heap[end_index];
+       heap[0] = heap[cuur_size];
        // console.log(heap[0])
        cuur_size--
-       shif_down(0,cuur_size-1)
+       shif_down(0,cuur_size-1);
+       console.log(heap)
        return min
     }
     // 获取顶部元素
