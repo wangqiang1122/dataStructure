@@ -19,35 +19,76 @@
         this.rate = rate;
     }
     var heap = new Min_heap(8);
-    // heap.init(arr)
-    // console.log(heap.top())
+    var forset = [];
     for (var attr in arr[0]) {
         var t = new CreateNode(attr,arr[0][attr]);
-        heap.inset(t)
+        forset.push(new TreeNode(t))
     }
-    // console.log(heap.remove_head());
-    // console.log(heap.remove_head());
-    // console.log(heap.remove_head());
-    // console.log(heap.remove_head());
-    // console.log(heap.remove_head());
-    // console.log(heap.length())
-
-    function NewNode(str) {
-        this.rate = str;
+   function TreeNode (data) {
+        this.rate = data;
         this.left = '';
         this.right = '';
         this.parent= '';
     }
 
-    while (heap.length()>1) {
-        var a1 = heap.remove_head();
-        var a2 = heap.remove_head();
-        var node = new NewNode(Number(a1.rate)+Number(a2.rate));
-        node.left = a1;
-        node.right = a2;
-        heap.inset(node)
+    console.log(forset);
+    function hafumanTree() {
+        var root = null;
+        this.init_tree = function () {
+            var min_heap = new Min_heap(8);
+            min_heap.init(forset)
+            // console.log(min_heap.remove_head());
+            // console.log(min_heap.remove_head());
+
+            for (var a =0 ;a<forset.length-1;a++) {
+                var min1 = min_heap.remove_head();
+                var min2 = min_heap.remove_head();
+                var item = new CreateNode('',Number(min1.rate.rate)+Number(min2.rate.rate));
+                var new_node = new TreeNode(item);
+                min_heap.inset(new_node)
+                new_node.left = min1;
+                new_node.right = min2;
+                min1.parent = new_node;
+                min2.parent = new_node;
+                root = new_node;
+            }
+            console.log(root)
+        }
+        this.get_code_form_tree = function (node,dirt,code_str) {
+           if (!node.left&&!node.right) {
+               dirt[node.rate.rate] = code_str;
+               return
+           }
+
+           if (node.left) {
+               this.get_code_form_tree(node.left,dirt,code_str+"0")
+           }
+            if (node.right) {
+                this.get_code_form_tree(node.right,dirt,code_str+"1")
+            }
+        };
+        this.getCode = function () {
+            // 获得长编码
+            var code_dirt = {};
+            this.get_code_form_tree(root,code_dirt,'')
+            return code_dirt
+        }
     }
-    console.log(heap.print())
+
+    var a = new hafumanTree();
+    a.init_tree()
+    console.log(a.getCode())
+
+
+    // while (heap.length()>1) {
+    //     var a1 = heap.remove_head();
+    //     var a2 = heap.remove_head();
+    //     var node = new NewNode(Number(a1.rate)+Number(a2.rate));
+    //     node.left = a1;
+    //     node.right = a2;
+    //     heap.inset(node)
+    // }
+    // console.log(heap.print())
 
 </script>
 </html>
