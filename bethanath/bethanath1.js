@@ -168,21 +168,19 @@ function linkList() {
     }
     // 递归反转
     this.reverse_digui = function (item) {
-        // console.log(item)
+
       if(!item){
           return null
       }
       if (item.next===null) {
-          console.log(item)
+          // console.log(item)
           return item
       }
-      var new_head = this.reverse_digui(item.next);
-      console.log(new_head)
-      // console.log(item)
+      var new_head = this.reverse_digui(item.next); // 1<2<3<4<t<a
+      console.log(item)
       item.next.next = item;
-      item.next = null
+      item.next = null;
       return  new_head
-
     }
 }
 

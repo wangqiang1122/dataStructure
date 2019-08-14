@@ -3,6 +3,7 @@ import Stack from './stack.js';
 /**
  * 二叉树节点的定义
  * 这是完全二叉树有规律的
+ * 堆
  *
  * @param node
  * @constructor
@@ -52,7 +53,8 @@ function BinaryTree() {
             }
           }
        }
-      console.log(root)
+      // console.log(root)
+        return root;
     }
 }
 

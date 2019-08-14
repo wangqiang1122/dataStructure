@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script type="module">
+    import BinaryTree from './bintree.js';
+    import down_order from './down_order.js';
+    var a = 'A(B(D,E(G,)),C(,F))#';
+    var bintree = new BinaryTree();
+    var middle = bintree.init_tree(a);
+    // middle_order(middle)
+    console.log(down_order(middle))
+</script>
+</html>

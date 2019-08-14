@@ -176,7 +176,7 @@ function linkList() {
 
     /**
      * 递归翻转思路：利用递归特性
-     *     递归是函数入栈 里面的参数也是可以保留的的特性对
+     *     递归是函数入栈 里面的参数也是可以保留的的之前的特性
      *     属性进行操作
      *     new_head是一个反向的链表
      *     主要操作的是item 对他的item.next.next进行重新重新指向 item.next归为null
@@ -197,8 +197,8 @@ function linkList() {
           console.log(item);
           return item
       }
-      var new_head = this.reverse_digui(item.next); //返回的是上一次的值  1<2<3<4<t < a
-      console.log(new_head)
+      var new_head = this.reverse_digui(item.next); //返回的是上一次的值  1<2<3<4<t<a
+      console.log(item)
       // console.log(item)
       item.next.next = item;
       item.next = null

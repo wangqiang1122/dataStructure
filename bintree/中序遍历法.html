@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<script src="stack.js"></script>-->
+    <!--<script src="bintree.js" type="module"></script>-->
+    <!--<script src="middle_order.js" type="module"></script>-->
+</head>
+<body>
+
+</body>
+<script type="module">
+    import BinaryTree from './bintree.js';
+    import middle_order from './middle_order.js';
+    var a = 'A(B(D,E(G,)),C(,F))#';
+    var bintree = new BinaryTree();
+    var middle = bintree.init_tree(a);
+    // middle_order(middle)
+    console.log(middle_order(middle))
+</script>
+</html>
