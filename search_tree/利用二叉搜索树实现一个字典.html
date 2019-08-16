@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="my_dict.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    /**
+     * 用二叉搜索树实现一个简单的字典 (困难模式)
+     *
+     * */
+
+    function myDict() {
+      var dict = new Searchtree();
+      this.set = function (key,value) {
+          dict.insert(key,value);
+      };
+      this.get = function (key) {
+          return dict.search_data(key)
+      };
+      this.hasKey = function (key) {
+         if (dict.search_data(key)) {
+             return true
+         } else {
+             return false
+         }
+      };
+    }
+
+    var a = new myDict();
+    a.set('name','dddd');
+    a.set('age','12');
+    a.set('class','kwy');
+    console.log(a.get('age'))
+
+</script>
+</html>

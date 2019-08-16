@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e1bb39d-05a1-4d27-ac69-da07c5e75cee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bintree/down_order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bintree/up_order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bintree/中序遍历法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bintree/前序遍历法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bintree/后序遍历法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bintree/寻找两个节点的最近的公共祖先.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search_tree/my_dict.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search_tree/利用二叉搜索树实现一个字典.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search_tree/实现二叉搜索树最大值和最小值.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bethanath/bethanath1.js" beforeDir="false" afterPath="$PROJECT_DIR$/bethanath/bethanath1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bethanath/bethanath2.js" beforeDir="false" afterPath="$PROJECT_DIR$/bethanath/bethanath2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bethanath/双向链表.html" beforeDir="false" afterPath="$PROJECT_DIR$/bethanath/双向链表.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bintree/bintree.js" beforeDir="false" afterPath="$PROJECT_DIR$/bintree/bintree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bintree/middle_order.js" beforeDir="false" afterPath="$PROJECT_DIR$/bintree/middle_order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queue/queue.js" beforeDir="false" afterPath="$PROJECT_DIR$/queue/queue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search_tree/my_dict.js" beforeDir="false" afterPath="$PROJECT_DIR$/search_tree/my_dict.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,26 +91,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="35" />
-          <entry key="js" value="29" />
+          <entry key="css" value="1" />
+          <entry key="html" value="38" />
+          <entry key="js" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="35" />
-          <entry key="JavaScript" value="29" />
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="38" />
+          <entry key="JavaScript" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="165" />
-          <entry key="js" value="2750" />
+          <entry key="html" value="816" />
+          <entry key="js" value="4764" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="165" />
-          <entry key="JavaScript" value="2750" />
+          <entry key="HTML" value="816" />
+          <entry key="JavaScript" value="4764" />
         </counts>
       </usages-collector>
     </session>
@@ -146,6 +138,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/heap/哈夫曼树.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="870">
+              <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bintree/前序遍历法.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -166,7 +167,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bintree/寻找两个节点的最近的公共祖先.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -176,19 +177,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bintree/stack.js">
+        <entry file="file://$PROJECT_DIR$/search_tree/my_dict.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-588">
-              <caret column="14" selection-start-column="9" selection-end-column="14" />
+            <state relative-caret-position="112">
+              <caret line="148" column="10" lean-forward="true" selection-start-line="148" selection-start-column="10" selection-end-line="148" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bintree/bintree.js">
+        <entry file="file://$PROJECT_DIR$/search_tree/利用二叉搜索树实现一个字典.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="46" column="42" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="42" />
+            <state relative-caret-position="165">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/search_tree/实现二叉搜索树最大值和最小值.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -205,33 +215,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/queue/斐波那契数列while.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bintree/中序遍历法.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="20" selection-end-column="9" />
-              <folding>
-                <element signature="e#312#350#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -247,9 +237,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bethanath/用链表实现队列.html" />
-        <option value="$PROJECT_DIR$/bethanath/用链表实现栈.html" />
-        <option value="$PROJECT_DIR$/bethanath/链表反转.html" />
         <option value="$PROJECT_DIR$/bethanath/从尾到头打印链表.html" />
         <option value="$PROJECT_DIR$/bethanath/两个有序链表合并.html" />
         <option value="$PROJECT_DIR$/bethanath/查找单列表中倒数第n个节点.html" />
@@ -285,7 +272,6 @@
         <option value="$PROJECT_DIR$/heap/js/hafumanHeap.js" />
         <option value="$PROJECT_DIR$/heap/哈夫曼树.html" />
         <option value="$PROJECT_DIR$/bethanath/双向链表.html" />
-        <option value="$PROJECT_DIR$/search_tree/my_dict.js" />
         <option value="$PROJECT_DIR$/bintree/bintree.js" />
         <option value="$PROJECT_DIR$/bintree/中序遍历法.html" />
         <option value="$PROJECT_DIR$/bethanath/bethanath2.js" />
@@ -298,6 +284,10 @@
         <option value="$PROJECT_DIR$/bintree/前序遍历法.html" />
         <option value="$PROJECT_DIR$/bintree/up_order.js" />
         <option value="$PROJECT_DIR$/bintree/寻找两个节点的最近的公共祖先.html" />
+        <option value="$PROJECT_DIR$/search_tree/利用二叉搜索树实现一个字典.css" />
+        <option value="$PROJECT_DIR$/search_tree/利用二叉搜索树实现一个字典.html" />
+        <option value="$PROJECT_DIR$/search_tree/my_dict.js" />
+        <option value="$PROJECT_DIR$/search_tree/实现二叉搜索树最大值和最小值.html" />
       </list>
     </option>
   </component>
@@ -308,8 +298,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="30" />
-    <option name="y" value="23" />
+    <option name="x" value="23" />
+    <option name="y" value="25" />
     <option name="width" value="1216" />
     <option name="height" value="711" />
   </component>
@@ -328,41 +318,6 @@
             <path>
               <item name="dataStructure" type="b2602c69:ProjectViewProjectNode" />
               <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="bintree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="heap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="queue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="search_tree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="stack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="structure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="排序算法" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -395,6 +350,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -473,15 +429,15 @@
       <workItem from="1565154465109" duration="649000" />
       <workItem from="1565589469038" duration="258000" />
       <workItem from="1565593017995" duration="6000" />
-      <workItem from="1565595271882" duration="20685000" />
+      <workItem from="1565595271882" duration="41359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192473000" />
+    <option name="totallyTimeSpent" value="213147000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="23" width="1216" height="711" extended-state="0" />
+    <frame x="23" y="25" width="1216" height="711" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26108786" />
@@ -510,23 +466,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/queue/约瑟夫环1.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/排序算法/冒泡排序.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/排序算法/冒泡排序2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stack/stack.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -621,23 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/heap/哈夫曼树.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search_tree/my_dict.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!block;n#f#0;n#!!block;n#Searchtree#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -833,6 +755,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bintree/寻找两个节点的最近的公共祖先.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_tree/利用二叉搜索树实现一个字典.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heap/哈夫曼树.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bintree/up_order.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -840,10 +779,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bintree/寻找两个节点的最近的公共祖先.html">
+    <entry file="file://$PROJECT_DIR$/search_tree/利用二叉搜索树实现一个字典.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="165">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_tree/my_dict.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="148" column="10" lean-forward="true" selection-start-line="148" selection-start-column="10" selection-end-line="148" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_tree/实现二叉搜索树最大值和最小值.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
