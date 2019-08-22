@@ -9,15 +9,22 @@
 
 </body>
 <script>
-    var arr = ['2',1,4,'99'];
+    var arr = ['2',1,4,'99','5'];
     var a = new Searchtree();
     for (var i=0;i<arr.length;i++) {
         a.insert(arr[i]);
     }
     // console.log(a.print())
 
-    console.log(a.max());
+    console.log(a.print());
     console.log(a.min())
-
+    console.log(a.height())
+    function a1() {
+        return 6
+    }
+    function b1(){
+        return 5
+    }
+   console.log(Math.max.call(a1(),b1()));
 </script>
 </html>

@@ -175,4 +175,12 @@ function Searchtree() {
     this.max = function () {
         return max(root);
     }
+    // 树的高度
+    this.height = function () {
+       return height(root);
+    };
+    function height(node) {
+       return node==null?0:(Math.max.call(height(node.leftChild),height(node.rightChild))+1);
+    }
+
 }
