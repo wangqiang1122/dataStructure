@@ -1,7 +1,7 @@
 /**
  * 搜索二叉树的特点左子树小于root小于右子树
  * */
-
+// import queue from './queue.js';
 
 var TreeNode = function (data,value) {
     this.data = data;
@@ -177,10 +177,40 @@ function Searchtree() {
     }
     // 树的高度
     this.height = function () {
-       return height(root);
+       return height1(root);
     };
-    function height(node) {
-       return node==null?0:(Math.max.call(height(node.leftChild),height(node.rightChild))+1);
+    function height1(node) {
+        // 层遍历获得高度
+        var height = 0;
+        var currentLevelNum=1;
+        var nextLeveNum = 0;
+        var queue = new Queue();
+        queue.enqueue(node);
+        while (!queue.isEmpty()) {
+            var a = queue.dequeue();
+            while (currentLevelNum) {
+                if (a.leftChild) {
+                    queue.enqueue(a.leftChild);
+                    nextLeveNum++
+                }
+                if (a.rightChild) {
+                    queue.enqueue(a.rightChild);
+                    nextLeveNum++
+                }
+                currentLevelNum--
+            }
+            height++;
+            currentLevelNum = nextLeveNum;
+            nextLeveNum = 0;
+        }
+        console.log(height)
+       // return node==null?0:(Math.max.call(height(node.leftChild),height(node.rightChild))+1);
+    }
+    // 后序遍历查找
+    function height2() {
+
     }
 
 }
+
+// export default Searchtree;
