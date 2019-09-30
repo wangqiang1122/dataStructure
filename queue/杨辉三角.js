@@ -13,11 +13,11 @@ function print_san(n) {
             var item = queue.dequeue();
             line += item + '   ';
             var value = item + pre;
-            console.log(value)
+            // console.log(value)
             pre = item;
             queue.enqueue(value)
         }
-        queue.enqueue(1)
+        // queue.enqueue(1)
         console.log(line)
     }
     // console.log(queue.me())

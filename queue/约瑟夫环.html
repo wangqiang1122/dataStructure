@@ -9,23 +9,48 @@
 </body>
 
 <script>
-    var a =10;
+    var a =100;
     var arr = [];
     for (var i=0;i<a;i++){
         arr.push(i)
     }
     var arr1 = arr;
     var b =0;
-    while (b++<10){
-        if (b%3===0) {
-            console.log(b-1)
-        }
-        //
-        // b = b+3;
-        // if (b<10) {
-        //   delete arr[b-1]
-        // }
+
+    // for (var j =0;j<arr.length;j++ ) {
+    //     var pop  = arr.shift();
+    //     if(j%3===0) {
+    //         arr.push(pop)
+    //     }
+    //     if (arr.length===1) {
+    //         break
+    //     }
+    // }
+    var index =0;
+    while (arr.length!==1) {
+            var pop  = arr.shift();
+            index++;
+            if(index%3!==0) {
+                arr.push(pop)
+            }
+            if (arr.length===1) {
+                break
+            }
     }
+
+
+
+    // while (b++<100){
+    //     delete arr[b-1]
+    //     if (b%3===0) {
+    //         console.log(b-1)
+    //     }
+    //     //
+    //     b = b+3;
+    //     if (b<10) {
+    //       delete arr[b-1]
+    //     }
+    // }
     console.log(arr)
 </script>
 </html>

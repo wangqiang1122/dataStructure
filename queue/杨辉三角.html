@@ -17,20 +17,22 @@
            var pre = 0;
            var line = '';
            // 打印多少个
+           console.log(queue.me())
            for (var j=0; j<a;j++) {
                var item = queue.dequeue();
                line += item + ' ';
                var value = item + pre;
+               console.log(value)
                pre = item;
                queue.enqueue(value)
            }
            queue.enqueue(1)
-           console.log(line)
+           // console.log(line)
        }
-       console.log(queue.me())
+       // console.log(queue.me())
        // console.log(queue.me())
    }
 
-   print_san(2)
+   print_san(4)
 </script>
 </html>
