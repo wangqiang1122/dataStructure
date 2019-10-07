@@ -96,7 +96,7 @@ function Searchtree() {
        } else if (data>node.data){
            return  remove_data(node.rightChild,data)
        } else {
-           if (node.leftChildNode&&node.rightChild) {
+           if (node.leftChild&&node.rightChild) {
                var curr_node = node.rightChild;
                while (curr_node.leftChild) {
                    curr_node = curr_node.leftChild;
@@ -179,6 +179,8 @@ function Searchtree() {
     this.height = function () {
        return height1(root);
     };
+
+    // 获取树的高度可以用Math.max的方法
     function height1(node) {
         // 层遍历获得高度
         var height = 0;
@@ -208,7 +210,6 @@ function Searchtree() {
     }
     // 后序遍历查找
     function height2() {
-
     }
 
 }

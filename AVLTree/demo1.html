@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script src="demo.js"></script>
+<script>
+    var t = new Tree();
+    var print = function(value) {
+        console.log('value -',value)
+    };
+    t.insert(11);
+    t.insert(8);
+    t.insert(4);
+    t.insert(9);
+    t.traverse(print);
+    console.log(t.getRoot())
+</script>
+</html>
