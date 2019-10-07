@@ -69,6 +69,7 @@ function checkIsBalance(node) {
 
        if (heightNode(node.rightChild.rightChild) >= heightNode(node.rightChild.leftChild)) {
            // 左单旋转
+           alert()
            node = rotationLD(node)
        } else {
            alert()
@@ -115,6 +116,7 @@ function Serach_link() {
                 console.log('返回值='+JSON.stringify(o.data));
                 // 节点之间的连接
                 node.rightChild = o;
+                console.log(node);
                 node = checkIsBalance(node);
             }
         }
