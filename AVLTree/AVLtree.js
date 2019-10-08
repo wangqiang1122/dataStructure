@@ -24,7 +24,6 @@ function TreeNode(data) {
 
 function rotationLD(node) {
     let tmp = node.rightChild;
-    var parent = node.parent;
     node.rightChild = tmp.leftChild;
     tmp.leftChild = node;
     return tmp;
@@ -36,10 +35,20 @@ function rotationLD(node) {
  * 右子树小于左子树  且平衡因子大于绝对值2 右子树高度-左子树高度 -2
  */
 function rotationRD(node) {
-
+  let tmp = node.leftChild;
+  node.leftChild = tmp.rightChild;
+  tmp.rightChild = node;
+  return tmp;
 }
 
+/**
+ * 先右后左的双旋转
+ */
 
+
+/**
+ * 向左后右双旋转
+ */
 
 
 /***
@@ -66,14 +75,23 @@ function checkIsBalance(node) {
     }
     // 右子树大于左子树 是向左旋转
     if (heightNode(node.rightChild)-heightNode(node.leftChild)>1) {
-
        if (heightNode(node.rightChild.rightChild) >= heightNode(node.rightChild.leftChild)) {
            // 左单旋转
-           alert()
-           node = rotationLD(node)
+           // alert()
+           node = rotationLD(node);
        } else {
-           alert()
+           // 先右后左双旋转
+           // alert()
        }
+    }
+    // 左子树大于右子树 向右转
+    if (heightNode(node.leftChild)-heightNode(node.rightChild)>1) {
+        // 判断是向右单转还是双转
+        if (heightNode(node.leftChild.leftChild) >= heightNode(node.leftChild.rightChild)) {
+            node = rotationRD(node);
+        } else {
+            // 先左后右双旋转
+        }
     }
     return node
 }
@@ -96,27 +114,24 @@ function Serach_link() {
             node = Node;
             return node
         } else if (node.data>data) { // 根结点大于新插入节点    左子树
-            node.leftChild = sert_node(node.leftChild,data);
-            return node
             if (node.leftChild==null) {
                 node.leftChild = Node;
-
+                return node
             } else if (node.leftChild!==null) {
-
+                node.leftChild = sert_node(node.leftChild,data);
+                node = checkIsBalance(node);
             }
         } else if (node.data<data) { // 根结点小于新插入节点    右子树
             // node.rightChild = sert_node(node.rightChild,data);
             if (node.rightChild==null) {
                 node.rightChild = Node;  // 只是连接当前节点的值
-                // console.log('node.rightChild==null的值'+JSON.stringify(Node.data));
                 return node
             } else if (node.rightChild!==null) {
                 var  o = sert_node(node.rightChild, data);   // 执行这一个函数方法以已经添加完了
-                console.log('当前节点node='+JSON.stringify(node.data));
-                console.log('返回值='+JSON.stringify(o.data));
+                // 递归后执行的代码 尤其是用树形结构的递归 用这种结构是最绕脑的
                 // 节点之间的连接
                 node.rightChild = o;
-                console.log(node);
+                console.log('当前节点值'+JSON.stringify(node.data))
                 node = checkIsBalance(node);
             }
         }
