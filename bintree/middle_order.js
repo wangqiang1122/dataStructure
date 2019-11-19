@@ -43,8 +43,8 @@ function digui_middle_order(node) {
         }
         // console.log(stack.arr())
         var item_node = stack.pop();
-        console.log(item_node)
-        arr.push(item_node.data)
+        console.log(item_node);
+        arr.push(item_node.data);
         curr_node = item_node.rightChildNode;
         next(curr_node)
         return arr

@@ -24,7 +24,7 @@ function TreeNode(data) {
 
 function rotationLD(node) {
     let tmp = node.rightChild;
-    node.rightChild = tmp.leftChild;
+    node.rightChild = tmp.leftChild||null;
     tmp.leftChild = node;
     return tmp;
 
@@ -36,7 +36,7 @@ function rotationLD(node) {
  */
 function rotationRD(node) {
   let tmp = node.leftChild;
-  node.leftChild = tmp.rightChild;
+  node.leftChild = tmp.rightChild||null
   tmp.rightChild = node;
   return tmp;
 }
@@ -44,12 +44,19 @@ function rotationRD(node) {
 /**
  * 先右后左的双旋转
  */
+function rotationRLS(node) {
+   node.rightChild = rotationRD(node.rightChild);
+   return rotationLD(node);
+}
 
 
 /**
  * 向左后右双旋转
  */
-
+function rotationLRS(node) {
+   node.leftChild = rotationLD(node.leftChild);
+   return rotationRD(node);
+}
 
 /***
  * 计算平衡因子需要知道左子树的高度和右子树的高度
@@ -81,7 +88,7 @@ function checkIsBalance(node) {
            node = rotationLD(node);
        } else {
            // 先右后左双旋转
-           // alert()
+           node = rotationRLS(node);
        }
     }
     // 左子树大于右子树 向右转
@@ -91,11 +98,34 @@ function checkIsBalance(node) {
             node = rotationRD(node);
         } else {
             // 先左后右双旋转
+            node = rotationLRS(node);
         }
     }
     return node
 }
 
+// 删除接口
+function deletDate(node,data) {
+    // 小于在左子树删除
+    if (node.data>data) {
+        node.leftChild = deletDate(node.leftChild,data)
+        node = checkIsBalance(node);
+    } else if (node.data<data) { // 大于在右子树删除
+        node.rightChild = deletDate(node.rightChild,data)
+        node = checkIsBalance(node);
+    } else { // 相等 删除次节点有三种情况
+        // 要删除的节点 既有左子树又有右子树 找到删除节点右子树的的中序排列的节点
+        if (node.leftChild&&node.rightChild) {
+           let tempNode = node.rightChild;
+
+        } else if(node.rightChild==null) {  // 只有左子树
+
+        } else if (node.leftChild==null) {  // 只有右子树
+
+        }
+    }
+    return node
+}
 
 /***
  *
@@ -149,5 +179,12 @@ function Serach_link() {
     }
     this.print = function () {
         console.log(root);
+    }
+    this.delete =function (node) {
+        if (root==null) {
+            return null
+        } else {
+            deletDate()
+        }
     }
 }

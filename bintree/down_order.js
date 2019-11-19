@@ -24,7 +24,9 @@ function down_order(node) {
         var item_node = stack.pop();
         if (item_node.data.rightChildNode && item_node.state===0) { // 说明这个节点没有左子树但是有右子树并且还没有被判断过
             item_node.state = 1;
-            stack.push(item_node);
+            stack.push(item_node
+
+            );
             curr_node = item_node.data.rightChildNode;
         } else {
             console.log(item_node.data.data)
