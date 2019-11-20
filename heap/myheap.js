@@ -88,7 +88,7 @@ function Minheap(size) {
        var min = heap[0];
        heap[0] = heap[cuur_size];
        // console.log(heap[0])
-       cuur_size--
+       --cuur_size
        shif_down(0,cuur_size-1);
        console.log(heap)
        return min
