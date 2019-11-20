@@ -10,7 +10,7 @@ function Maxheap(size) {
         for (var a = 0; a<cuur_size;a++) {
             heap[a]= arr[a]
         }
-        console.log(heap);
+        // console.log(heap);
         // 找到最有一个分支节点
         var cuur_pos = Math.floor((cuur_size-2)/2);
         console.log(cuur_pos)
@@ -27,6 +27,11 @@ function Maxheap(size) {
     }
 
     function shit_Max(start,m) {
+        // heap = heap.filter((item)=>{
+        //     if (item){
+        //         return item
+        //     }
+        // })
        // 从start位置向下滑比较
        var parent_curr = start;
        // 父节点肯定有左孩子
@@ -36,7 +41,7 @@ function Maxheap(size) {
                max_child = max_child+1
            }
            if (heap[parent_curr]>=heap[max_child]) {
-               console.log(parent_curr)
+               // console.log(parent_curr)
                return
            } else {
                var tmp = heap[parent_curr];

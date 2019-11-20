@@ -9,7 +9,7 @@
 
 </body>
 <script>
-    var arr = [53,17,78,965,87,23,100,111,7777777];
+    var arr = [53,17,78,965,87,23,100,111,7777777,6666,3333,555,77];
     var heap = new Maxheap(50);
     // heap.init(arr)
     for (var a=0;a<arr.length;a++) {
@@ -17,7 +17,12 @@
     }
     heap.inset(1);
     heap.inset(2);
-    console.log(heap.print())
+    var h = 13;
+    while (h--) {
+        console.log(heap.remove_head());
+    }
+    console.log(heap.print());
+
     // console.log(heap.remove_head());
     // console.log(heap.remove_head())
     // console.log(heap.remove_head())
