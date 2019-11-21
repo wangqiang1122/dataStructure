@@ -27,13 +27,9 @@ function Maxheap(size) {
     }
 
     function shit_Max(start,m) {
-        // heap = heap.filter((item)=>{
-        //     if (item){
-        //         return item
-        //     }
-        // })
        // 从start位置向下滑比较
        var parent_curr = start;
+       // console.log(heap);
        // 父节点肯定有左孩子
        var max_child =  Math.floor((2*parent_curr)+1);
        while (max_child<=m) {
@@ -42,7 +38,7 @@ function Maxheap(size) {
            }
            if (heap[parent_curr]>=heap[max_child]) {
                // console.log(parent_curr)
-               return
+               break
            } else {
                var tmp = heap[parent_curr];
                heap[parent_curr] = heap[max_child];
@@ -51,13 +47,13 @@ function Maxheap(size) {
                max_child = (2*parent_curr)+1;
            }
        }
-       cuur_size = heap.length-1
+       // cuur_size = heap.length-1
     }
     // 插入
      this.inset = function(str) {
-      if (cuur_size>Max_size) {
-          return false;
-      }
+      // if (cuur_size>Max_size) {
+      //     return false;
+      // }
       heap[cuur_size] = str;
       shit_max_up(cuur_size);
       cuur_size+=1;
@@ -67,6 +63,8 @@ function Maxheap(size) {
       var child_index = index;
       // 找到最后一个分支节点
       var max_child = Math.floor((child_index-1)/2);
+      // console.log(heap[max_child]);
+      // console.log(heap[child_index]);
       while (child_index>0) {
          if (heap[max_child]<heap[child_index]) {
              var tmp = heap[max_child];
@@ -75,7 +73,7 @@ function Maxheap(size) {
              child_index = max_child;
              max_child = Math.floor((child_index-1)/2);
          } else {
-             return
+             break
          }
       }
     }
@@ -84,11 +82,13 @@ function Maxheap(size) {
            return null
        }
        var head = heap[0];
-        heap[0] = head[cuur_size];
+       // console.log(cuur_size-1);
+       // console.log(heap[cuur_size-1]);
+       heap[0] = head[cuur_size-1];
         // cuur_size-=1;
         // shit_max_up(cuur_size)
         cuur_size-=1;
-        shit_Max(0,cuur_size);
+        shit_Max(0,cuur_size-1);
         return head
     };
     this.print = function () {

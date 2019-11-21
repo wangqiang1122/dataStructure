@@ -10,11 +10,11 @@
 </body>
 <script>
     var arr = [53,17,78,965,87,23,100,111,7777777];
-    var heap = new Maxheap(50);
+    var heap = new Maxheap(arr.length);
     // heap.init(arr)
-    for (var a=0;a<arr.length;a++) {
-        heap.inset(arr[a])
-    }
+    // for (var a=0;a<arr.length;a++) {
+    //     heap.inset(arr[a])
+    // }
     heap.inset(1);
     heap.inset(2);
     console.log(heap.remove_head());

@@ -18,7 +18,7 @@ function Minheap(size) {
             shif_down(cuur_pos,cuur_size-1) // 把最后一个父节点和最后一个叶节点传过去   局部自上而下 向下调整
             cuur_pos-=1                     // 调整分支节点
         }
-    }
+    };
 
     /**
       *  最小堆的初始化
@@ -40,7 +40,7 @@ function Minheap(size) {
                 min_child_index = min_child_index+1;  // min_child_index 指针永远指向的是最小的索引
             }
             if (heap[parent_curr]<=heap[min_child_index]) {
-                break
+                return
             } else {
                 // 父节点和自节点进行交换
                 var tmp = heap[parent_curr]; // 把父节点单独保存出来
@@ -63,12 +63,13 @@ function Minheap(size) {
       var curr_parent = Math.floor((index-1)/2); // 找到最后一个节点的父节点 也就是最后一个分支节点
       // shif_up(curr_parent,cuur_size-1) // 传入最后一个分支节点，数组的最后索引
       shif_up(index); //新插入元素的索引
-       index+=1;
+      index+=1;
+       cuur_size+=1;
       return true
    }
     function shif_up(start) {
        var child_index = start; // 新加入的节点索引
-       var parent_index =  Math.floor((cuur_size-1)/2);// 找到最后一个节点的父节点 也就是最后一个分支节点
+       var parent_index =  Math.floor((cuur_size-2)/2);// 找到最后一个节点的父节点 也就是最后一个分支节点
        var min_child_index = child_index;
        while (min_child_index>0) {
            if (heap[min_child_index]<heap[parent_index]) {
@@ -89,9 +90,10 @@ function Minheap(size) {
        }
        var min = heap[0];
        heap[0] = heap[cuur_size-1];
-        cuur_size-=1;
-       shif_down(0,cuur_size-1);
-       return min
+       // cuur_size-=1;
+        --cuur_size;
+       shif_down(0,cuur_size-1); //cuur_size-1 删除完最后一个叶节点
+       return min;
     }
     // 获取顶部元素
     this.top = function () {
