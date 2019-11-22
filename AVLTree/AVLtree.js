@@ -3,6 +3,10 @@
  * @constructor
  * AVL树和普通的二叉搜索树没什么区别 左子树比根结点小 右子树比根结点大
  * AVL树只是有比普通二叉树多个自平衡功能 搜索效率比普通二叉树高
+ *
+ *
+ *  练习题 实现insert方法 (困难模式)
+ *        实现删除方法(困难+)
  */
 
 
@@ -117,11 +121,22 @@ function deletDate(node,data) {
         // 要删除的节点 既有左子树又有右子树 找到删除节点右子树的的中序排列的节点
         if (node.leftChild&&node.rightChild) {
            let tempNode = node.rightChild;
-
+           // 到找右子树最小的节点
+           while (tempNode.leftChild!=null) {
+               tempNode = tempNode.leftChild;
+           }
+           // 找到了需要先复制给要删除的节点;
+           node.data = tempNode.data;
+           // 删除复制给要删除节点的
+           node.rightChild = deletDate(node.rightChild,tempNode.data);
+           node = checkIsBalance(node);
         } else if(node.rightChild==null) {  // 只有左子树
+            node = node.leftChild;
 
         } else if (node.leftChild==null) {  // 只有右子树
-
+            node = node.rightChild;
+        } else {
+            node = null;
         }
     }
     return node
@@ -184,7 +199,7 @@ function Serach_link() {
         if (root==null) {
             return null
         } else {
-            deletDate()
+            deletDate(root,node)
         }
     }
 }
