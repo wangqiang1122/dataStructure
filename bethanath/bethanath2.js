@@ -198,10 +198,18 @@ function linkList() {
           return item
       }
       var new_head = this.reverse_digui(item.next); //返回的是上一次的值  1<2<3<4<t<a
-      console.log(item)
+        /**
+         *  以1>2>3>4>5>a 为例子
+         *  第一次 new_head返回得失 a
+         *  item 是 t>a
+         *  item.next.next = item;   a>t>null
+         *  item 是4>t>a
+         *  item.next.next = item;   a>t>4>null
+         */
+       console.log(item)
       // console.log(item)
-      item.next.next = item;
-      item.next = null
+      item.next.next = item; // 记录的上一个
+      item.next = null; //当前
       return  new_head
     }
     // 从尾到头打印链表

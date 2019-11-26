@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="bitMap.js"></script>
+</head>
+<body>
+
+</body>
+
+<script>
+    /**
+     *  利用二进制关系来判断是否有重复的汉字或者有几次重复
+     */
+    // String.fromCharCode(f) ASCII 转 文字
+    // str.charCodeAt(a) // 文字转 ASCII码
+
+    var bitMap = new BitMap(32);
+    var str = '我是你爸爸';
+    for (var a =0;a<str.length;a++) {
+        console.log(str.charCodeAt(a))
+        bitMap.addMember(str.charCodeAt(a));
+    }
+    var f = bitMap.isRepeat(str.charCodeAt(4));
+
+    console.log(String.fromCharCode(f));
+</script>
+</html>
