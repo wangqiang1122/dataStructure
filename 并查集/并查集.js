@@ -22,6 +22,7 @@ var friends = [
 
 function UFSets() {
     var parent = [];
+    this.friends = friends;
     /**
      * 初始化方法
      * 进行初始化的时候，数组里的每一个元素都初始化为-1，这里有3个感念非常重要
@@ -42,7 +43,7 @@ function UFSets() {
         for (var i=0;i<size;i++) {
             parent[i] = -1;
         }
-
+        this.hebing();
     }
     /***
      * find方法是搜索x所在的集合，并返回这个集合的名字
@@ -63,9 +64,48 @@ function UFSets() {
      *  仅仅是这三个放发一个并查集就写好了
      */
     this.union = function (root1,root2) {
-        parent[root1] +=parent[root2];
+        parent[root1] = parent[root1]+parent[root2];
         parent[root2] = root1;
     }
 
 
+    // 进行合并操作
+    this.hebing = function () {
+        //  [1,2],
+        for (var a =0;a<7;a++) {
+            var parentI =a;
+            var [a1,a2] = this.friends[parentI];
+            var z1 = this.find(a1);
+            var z2 = this.find(a2);
+            // console.log(z1)
+            // console.log(parent[z1]);
+            // this.union(a1,a2);
+            if (parent[z1]<0||parent[z2]<0) {
+              this.union(z1,z2);
+            } else {
+                if (parent[z1]!==parent[z2]) {
+                    this.union(z1,z2);
+                }
+            }
+        }
+    }
+    this.print = function () {
+        // console.log(parent[this.find(2)]+parent[this.find(1)]);
+        // console.log(parent[this.find(2)]);
+        // console.log(parent[this.find(1)])
+        console.log(parent)
+    }
+    this.isfriend = function (root1,root2) {
+      var a1 = this.find(root1);
+      var a2 = this.find(root2);
+      return a1===a2;
+    }
 }
+
+
+var a = new UFSets();
+a.init(10);
+console.log(a.isfriend(1,8))
+
+
+a.print()

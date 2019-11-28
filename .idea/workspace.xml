@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e1bb39d-05a1-4d27-ac69-da07c5e75cee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AVLTree/Emmet.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AVLTree/Emmet1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/查找字母或者汉字.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/并查集/并查集.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AVLTree/queue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AVLTree/stack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/并查集/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AVLTree/Emmet.js" beforeDir="false" afterPath="$PROJECT_DIR$/AVLTree/Emmet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bethanath/bethanath2.js" beforeDir="false" afterPath="$PROJECT_DIR$/bethanath/bethanath2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AVLTree/Emmet.html" beforeDir="false" afterPath="$PROJECT_DIR$/AVLTree/Emmet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AVLTree/Emmet1.js" beforeDir="false" afterPath="$PROJECT_DIR$/AVLTree/Emmet1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/并查集/并查集.js" beforeDir="false" afterPath="$PROJECT_DIR$/并查集/并查集.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,41 +100,42 @@
     <session id="399701292">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="4" />
           <entry key="project.open.time.26" value="2" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="89" />
-          <entry key="js" value="84" />
+          <entry key="html" value="91" />
+          <entry key="js" value="90" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="89" />
-          <entry key="JavaScript" value="84" />
+          <entry key="HTML" value="91" />
+          <entry key="JavaScript" value="90" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="2065" />
-          <entry key="js" value="11838" />
+          <entry key="html" value="2097" />
+          <entry key="js" value="14794" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2065" />
-          <entry key="JavaScript" value="11838" />
+          <entry key="HTML" value="2097" />
+          <entry key="JavaScript" value="14794" />
         </counts>
       </usages-collector>
     </session>
@@ -142,51 +143,69 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AVLTree/AVLtree.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2136">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AVLTree/Emmet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AVLTree/Emmet1.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+            <state relative-caret-position="175">
+              <caret line="65" column="29" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AVLTree/Emmet.html">
+        <entry file="file://$PROJECT_DIR$/AVLTree/Emmet1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+            <state relative-caret-position="306">
+              <caret line="141" column="33" selection-start-line="141" selection-start-column="30" selection-end-line="141" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bethanath/bethanath.js">
+        <entry file="file://$PROJECT_DIR$/并查集/并查集.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/并查集/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/queue/queue.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AVLTree/queue.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bethanath/bethanath1.js">
+        <entry file="file://$PROJECT_DIR$/AVLTree/stack.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="15" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="15" />
+            <state relative-caret-position="-214">
+              <caret column="14" selection-start-column="9" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AVLTree/Emmet.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -201,20 +220,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="4" column="22" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/structure/数据结构之-bitmap.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AVLTree/demo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="34" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -245,7 +250,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bintree/用栈判断口号是否合法.html" />
         <option value="$PROJECT_DIR$/排序算法/冒泡排序.html" />
         <option value="$PROJECT_DIR$/bintree/广义表二叉树.html" />
         <option value="$PROJECT_DIR$/bintree/stack.js" />
@@ -292,10 +296,11 @@
         <option value="$PROJECT_DIR$/AVLTree/AVLtree.js" />
         <option value="$PROJECT_DIR$/bethanath/bethanath2.js" />
         <option value="$PROJECT_DIR$/structure/查找字母或者汉字.html" />
-        <option value="$PROJECT_DIR$/并查集/并查集.js" />
         <option value="$PROJECT_DIR$/AVLTree/Emmet.js" />
-        <option value="$PROJECT_DIR$/AVLTree/Emmet1.js" />
         <option value="$PROJECT_DIR$/AVLTree/Emmet.html" />
+        <option value="$PROJECT_DIR$/并查集/index.html" />
+        <option value="$PROJECT_DIR$/并查集/并查集.js" />
+        <option value="$PROJECT_DIR$/AVLTree/Emmet1.js" />
       </list>
     </option>
   </component>
@@ -305,9 +310,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="12" />
-    <option name="y" value="153" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="21" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="736" />
   </component>
@@ -331,11 +336,6 @@
               <item name="dataStructure" type="b2602c69:ProjectViewProjectNode" />
               <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
               <item name="AVLTree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="bethanath" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -372,11 +372,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/AVLTree" />
       <recent name="$PROJECT_DIR$/search_tree" />
       <recent name="$PROJECT_DIR$/heap" />
       <recent name="$PROJECT_DIR$/bintree" />
       <recent name="$PROJECT_DIR$/structure" />
-      <recent name="$PROJECT_DIR$/bethanath" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -391,11 +391,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.Emmet1.js">
+  <component name="RunManager" selected="Node.js.并查集.js">
     <configuration name="Emmet1.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="Emmet1.js" working-dir="$PROJECT_DIR$/AVLTree">
       <method v="2" />
     </configuration>
     <configuration name="杨辉三角.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="杨辉三角.js" working-dir="$PROJECT_DIR$/queue">
+      <method v="2" />
+    </configuration>
+    <configuration name="并查集.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="并查集.js" working-dir="$PROJECT_DIR$/并查集">
       <method v="2" />
     </configuration>
     <configuration name="hashMap.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="hashMap.js" working-dir="$PROJECT_DIR$/structure">
@@ -405,9 +408,11 @@
       <item itemvalue="Node.js.杨辉三角.js" />
       <item itemvalue="Node.js.hashMap.js" />
       <item itemvalue="Node.js.Emmet1.js" />
+      <item itemvalue="Node.js.并查集.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.并查集.js" />
         <item itemvalue="Node.js.Emmet1.js" />
         <item itemvalue="Node.js.杨辉三角.js" />
         <item itemvalue="Node.js.hashMap.js" />
@@ -463,30 +468,31 @@
       <workItem from="1571795029067" duration="3440000" />
       <workItem from="1574067757534" duration="17150000" />
       <workItem from="1574652062777" duration="1198000" />
-      <workItem from="1574749777190" duration="9860000" />
+      <workItem from="1574749777190" duration="13826000" />
+      <workItem from="1574840534824" duration="13736000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="319883000" />
+    <option name="totallyTimeSpent" value="337585000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="736" extended-state="6" />
+    <frame x="21" y="23" width="1280" height="736" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4130262" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21286735" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956383" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32919255" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32919255" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990307" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.0077639753" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2826087" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -500,37 +506,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/queue/杨辉三角.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/queue/两个栈实现一个队列.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/queue/queue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/queue/迷宫.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bintree/寻找两个节点的最近的公共祖先.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bintree/stack.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-41" />
@@ -751,20 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/并查集/并查集.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVLTree/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="44" column="17" lean-forward="true" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/structure/数据结构之-bitmap.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -782,25 +743,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AVLTree/Emmet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bethanath/链表翻转.html">
+    <entry file="file://$PROJECT_DIR$/stack/stack.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/bethanath/bethanath.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/bethanath/bethanath1.js">
+    <entry file="file://$PROJECT_DIR$/AVLTree/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="15" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="15" />
+        <state relative-caret-position="660">
+          <caret line="44" column="17" lean-forward="true" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bethanath/bethanath1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bethanath/链表翻转.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/bethanath/bethanath2.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -809,17 +773,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AVLTree/Emmet1.js">
+    <entry file="file://$PROJECT_DIR$/AVLTree/stack.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        <state relative-caret-position="-214">
+          <caret column="14" selection-start-column="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queue/queue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVLTree/queue.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/并查集/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/并查集/并查集.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVLTree/Emmet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="65" column="29" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVLTree/Emmet.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        <state relative-caret-position="90">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVLTree/Emmet1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="141" column="33" selection-start-line="141" selection-start-column="30" selection-end-line="141" selection-end-column="33" />
         </state>
       </provider>
     </entry>
