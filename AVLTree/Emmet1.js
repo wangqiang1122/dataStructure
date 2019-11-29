@@ -40,8 +40,8 @@ function linkList() {
 }
 var str = 'div>p>span';
 var str1 ='p>div#haha.class1.class2[name=dd type=text]{hhh}';
-var str2 ='div>p{div的下级}+span{p的平级}^div{从下级中出来了}';
-elementC(str2)
+var str2 ='div>p{div的下级}+span{p的平级}^div{从下级中出来了}>p{我是}';
+elementC(str2);
 var strg = str1.split('>');
 var queue = new Queue();
 var ele = null; //节点
@@ -56,27 +56,41 @@ function elementC(str) {
     var arr = [];
     var type = null; // 当前押入的类型
     var a1 = str.split('>');
+    var index = null;
+    var isXindetiaoji = false;
     for (var a =0;a<a1.length;a++) {
+        index = a;
         for (var i =0;i<a1[a].length;i++) {
+            isXindetiaoji = false;
             if (a1[a].charAt(i)==='+') {
-                typeSplit(queue1,type)
+                typeSplit(queue1,type,index);
                 type = '+';
             } else if (a1[a].charAt(i)==='^') {
-                typeSplit(queue1,type,a)
+                typeSplit(queue1,type,index);
                 type = '^'
             } else {
                 queue1.enqueue(a1[a].charAt(i));
             }
         }
-        typeSplit(queue1,type)
+        typeSplit(queue1,type,index)
     }
     console.log(a1)
 }
 
+var isTiaoji= null;
 function typeSplit(queue,type,index) {
   if (type==='+') {
      console.log(stR1(queue))
   } else if(type==='^') {
+      if (!isTiaoji) {
+          isTiaoji = index;
+      }
+      var shangyiji = isTiaoji-1<0?0:isTiaoji-1;
+      if (shangyiji<=0) {
+          console.log('父级')
+      } else {
+          console.log('自己')
+      }
       console.log(stR1(queue))
   } else {
       console.log(stR1(queue))
