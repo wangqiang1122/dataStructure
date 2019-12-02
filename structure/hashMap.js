@@ -116,12 +116,12 @@ function BoolmFilter(max_count,error_rate) {
 }
 
 
-// console.log(murmurhash3_32_gc('www.badu,com',3))
+console.log(murmurhash3_32_gc('www.badu,com',3))
 
 
-var a =new BoolmFilter(10000000,0.01);
-
-a.add('http://localhost:4200/#/coupon-detail/0/1');
-
-
-console.log(a.isExist('http://localhost:4200/#/coupon-detail/0/1'))
+// var a =new BoolmFilter(10000000,0.01);
+//
+// a.add('http://localhost:4200/#/coupon-detail/0/1');
+//
+//
+// console.log(a.isExist('http://localhost:4200/#/coupon-detail/0/1'))
