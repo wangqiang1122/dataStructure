@@ -39,8 +39,9 @@ function rotationLD(node) {
  * 右子树小于左子树  且平衡因子大于绝对值2 右子树高度-左子树高度 -2
  */
 function rotationRD(node) {
+    console.log(node)
   let tmp = node.leftChild;
-  node.leftChild = tmp.rightChild||null
+  node.leftChild = tmp.rightChild||null;
   tmp.rightChild = node;
   return tmp;
 }
