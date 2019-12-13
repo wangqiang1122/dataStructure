@@ -2,16 +2,17 @@
 // 新建琏表对象
 function linkList() {
     // 定义节点
-    function Node(data) {
-        this.data = data;
-        this.next = null
+    function Node(key,value) {
+        this.data = key;
+        this.next = null;
+        this.value = value;
     }
     var length = 0
     var head = null;
     var tail = null;
     // 添加
-    this.append = function (str) {
-        var node = new Node(str)
+    this.append = function (key,value) {
+        var node = new Node(key,value)
         if (head==null) {
             head = node;
             tail = head;
@@ -146,6 +147,20 @@ function linkList() {
         }
 
     }
+    // 找到相对应的节点
+    this.search = function (str) {
+        var cuur_node = head;
+        var index = 0
+        while (cuur_node) {
+            if (cuur_node.data==str) {
+                return cuur_node
+            } else {
+                index+=1;
+                cuur_node = cuur_node.next
+            }
+        }
+        return null
+    };
     // while的反转  迭代反转
     this.reverse_iter = function (head) {
        if (!head) {
