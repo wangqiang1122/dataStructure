@@ -93,6 +93,7 @@ function linkList() {
     }
     // 删除指定元素
     this.remove = function (index) {
+        console.log(index)
         if (index<0) {
             throw new Error('不能为负数')
         } else if (index>length) {
@@ -124,8 +125,9 @@ function linkList() {
         if (!delNode) return null
         head = null;
         head = delNode.next;
-        length-=1
-        return delNode.data
+        length-=1;
+        console.log(delNode)
+        return delNode
     }
     // 删除尾节点
     this.remove_tail = function () {
@@ -137,7 +139,17 @@ function linkList() {
         tail = preNode;
         length-=1
         return delNode.data
-    }
+    };
+    // 删除特定的节点
+    this.remove_key = function (name) {
+       var index = this.indexOf(name);
+       if (index===0) {
+           console.log(index)
+           return this.remove_head();
+       } else {
+           return this.remove(index);
+       }
+    };
     // 链表是否为空
     this.isEmpty = function () {
         if (head) {
@@ -155,7 +167,6 @@ function linkList() {
             if (cuur_node.data==str) {
                 return cuur_node
             } else {
-                index+=1;
                 cuur_node = cuur_node.next
             }
         }

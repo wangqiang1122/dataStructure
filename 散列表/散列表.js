@@ -60,6 +60,28 @@ function HashTable() {
             console.dir( item[index].head())
         }
     }
-
+    this.get=function (key) {
+        var index = get_index(key);
+        var node = item[index].search(key);
+        if (node) {
+            return node.value
+        } else {
+            return null
+        }
+    }
+    this.remove = function (key) {
+        var index = get_index(key);
+        var node = item[index];
+        if (node) {
+           return node.remove_key(key)
+        } else {
+            return null
+        }
+    }
+    this.hashKey = function (key) {
+        var index = get_index(key);
+        var node = item[index].search(key);
+        return node;
+    }
 }
 
