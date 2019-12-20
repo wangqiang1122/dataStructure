@@ -1,7 +1,13 @@
 /**
  * bitMap 有长度限制
+ * 查找重复的数
+ * 一个32位的bit位只能查找
+ * 一位表示这个数是否存在 ，一位表示这个数是否重复
  * @param size
  * @constructor
+ *
+ * 用两个bitMap 也可以实现此功能
+ * 找出不重复的数
  */
 
 function BitMap(size) {
@@ -18,9 +24,9 @@ function BitMap(size) {
     * */
     this.addMember = function (member) {
       // 计算数组的索引位置
-      var arr_index = Math.floor(member/32);
+      var arr_index = Math.floor(member/16);
       // 具体bit位的位置
-      var bit_index = member%32;
+      var bit_index = member%16;
       // console.log(this.isExist(member))
       if(this.isExist(member)) {
           bit_arr1[arr_index] =  bit_arr[arr_index]|(1<<bit_index)
@@ -33,9 +39,9 @@ function BitMap(size) {
      */
     this.isExist = function (member) {
         // 计算在数组的位置
-        var arr_index = Math.floor(member/32);
+        var arr_index = Math.floor(member/16);
         // 具体bit位的位置
-        var bit_index = member%32;
+        var bit_index = member%16;
         if (bit_arr[arr_index]&(1<<bit_index)) {
             return true
         }

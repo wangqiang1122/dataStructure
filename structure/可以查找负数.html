@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="bitMap.js"></script>
+    <script src="支持负数的查找.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    var bitmap = new SuperbitMap(4);
+    var a = [2,3,4,5,-1,-4,6]
+    for (var i=0;i<a.length;i++) {
+       bitmap.addMember(a[i])
+    }
+    console.log(bitmap.isExit(-4))
+
+</script>
+</html>
