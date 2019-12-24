@@ -110,7 +110,6 @@ function HashTable() {
             }
         }
 
-
     };
     // 判断数据是否需要扩容
     this.is_kuo = function () {

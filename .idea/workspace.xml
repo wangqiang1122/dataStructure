@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e1bb39d-05a1-4d27-ac69-da07c5e75cee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/structure/bitMap2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/bitMap查找不重复的数.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/可以查找负数.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/图/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/图/queue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/图/图的广度遍历.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/图/图的深度遍历.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/bitMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/structure/bitMap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/支持负数的查找.js" beforeDir="false" afterPath="$PROJECT_DIR$/structure/支持负数的查找.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/散列表/散列表.js" beforeDir="false" afterPath="$PROJECT_DIR$/散列表/散列表.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,8 +99,9 @@
     <session id="399701292">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.19" value="1" />
@@ -112,67 +112,39 @@
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="20" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="106" />
-          <entry key="js" value="116" />
+          <entry key="html" value="107" />
+          <entry key="js" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="106" />
-          <entry key="JavaScript" value="116" />
+          <entry key="HTML" value="107" />
+          <entry key="JavaScript" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="2483" />
-          <entry key="js" value="17987" />
+          <entry key="html" value="2493" />
+          <entry key="js" value="18009" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2483" />
-          <entry key="JavaScript" value="17987" />
+          <entry key="HTML" value="2493" />
+          <entry key="JavaScript" value="18009" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/structure/支持负数的查找.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/structure/数据结构之-bitmap.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/structure/数据结构之-bitmap1.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/structure/bitMap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="15" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/structure/可以查找负数.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -205,20 +177,44 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/散列表/散列表.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
+            <state relative-caret-position="235">
+              <caret line="110" column="9" lean-forward="true" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/图/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/图/queue.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/图/图的广度遍历.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/图/图的深度遍历.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/散列表/bethanath1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="55" column="13" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="13" />
+            <state relative-caret-position="105">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -229,8 +225,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -250,9 +246,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bintree/中序遍历法.html" />
-        <option value="$PROJECT_DIR$/bethanath/bethanath1.js" />
-        <option value="$PROJECT_DIR$/queue/斐波那契queue.html" />
         <option value="$PROJECT_DIR$/bintree/后序遍历法.html" />
         <option value="$PROJECT_DIR$/bintree/寻找两个节点的最近的公共祖先.html" />
         <option value="$PROJECT_DIR$/search_tree/利用二叉搜索树实现一个字典.css" />
@@ -301,6 +294,9 @@
         <option value="$PROJECT_DIR$/structure/bitMap查找不重复的数.html" />
         <option value="$PROJECT_DIR$/structure/bitMap2.js" />
         <option value="$PROJECT_DIR$/散列表/散列表.js" />
+        <option value="$PROJECT_DIR$/图/图的广度遍历.js" />
+        <option value="$PROJECT_DIR$/图/图的深度遍历.js" />
+        <option value="$PROJECT_DIR$/图/index.html" />
       </list>
     </option>
   </component>
@@ -310,7 +306,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="735" />
@@ -334,7 +330,7 @@
             <path>
               <item name="dataStructure" type="b2602c69:ProjectViewProjectNode" />
               <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="散列表" type="462c0819:PsiDirectoryNode" />
+              <item name="图" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -371,11 +367,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/图" />
       <recent name="$PROJECT_DIR$/structure" />
       <recent name="$PROJECT_DIR$/散列表" />
       <recent name="$PROJECT_DIR$/AVLTree" />
       <recent name="$PROJECT_DIR$/search_tree" />
-      <recent name="$PROJECT_DIR$/heap" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -474,15 +470,16 @@
       <workItem from="1576461775367" duration="12677000" />
       <workItem from="1576721557970" duration="2279000" />
       <workItem from="1576750346839" duration="1144000" />
-      <workItem from="1576812147020" duration="3002000" />
+      <workItem from="1576812147020" duration="3105000" />
+      <workItem from="1577065669056" duration="1506000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="380919000" />
+    <option name="totallyTimeSpent" value="382528000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="735" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21286735" />
@@ -511,28 +508,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/heap/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/heap/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/heap/index3.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/heap/index4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="68" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/heap/js/hafumanHeap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-823">
@@ -814,15 +789,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/散列表/bethanath1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="55" column="13" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="13" />
+        <state relative-caret-position="105">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/散列表/散列表.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
+        <state relative-caret-position="235">
+          <caret line="110" column="9" lean-forward="true" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/图/queue.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/图/图的广度遍历.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/图/图的深度遍历.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/图/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
         </state>
       </provider>
     </entry>
