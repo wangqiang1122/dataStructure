@@ -135,6 +135,6 @@
      }
 
  }
- var a = new Graph(arr);
- a.init()
- console.log(a.components())
+ // var a = new Graph(arr);
+ // a.init()
+ // console.log(a.components())
