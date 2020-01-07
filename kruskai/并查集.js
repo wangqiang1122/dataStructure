@@ -20,9 +20,12 @@ var friends = [
  * 类的定义
  */
 
-function UFSets(friends) {
+function UFSets(size) {
     var parent = [];
-    this.friends = friends;
+    parent = new Array(size);
+    for (var i=0;i<size;i++) {
+        parent[i] = -1;
+    }
     /**
      * 初始化方法
      * 进行初始化的时候，数组里的每一个元素都初始化为-1，这里有3个感念非常重要
@@ -38,11 +41,8 @@ function UFSets(friends) {
      * 点，他就是跟节点
      * 初始化为-1 表明每个元素都没有父节点
      * */
-    this.init = function (size) {
-        parent = new Array(size);
-        for (var i=0;i<size;i++) {
-            parent[i] = -1;
-        }
+    this.init = function (f) {
+        this.friends = f;
         this.hebing();
     }
     /***
@@ -72,7 +72,7 @@ function UFSets(friends) {
     // 进行合并操作
     this.hebing = function () {
         //  [1,2],
-        for (var a =0;a<7;a++) {
+        for (var a =0;a<this.friends.length;a++) {
             var parentI =a;
             var [a1,a2] = this.friends[parentI];
             var z1 = this.find(a1);
@@ -102,10 +102,10 @@ function UFSets(friends) {
     }
 }
 
-
-var a = new UFSets(friends);
-a.init(10);
-console.log(a.isfriend(1,8))
-
-
-a.print()
+//
+// var a = new UFSets(friends);
+// a.init(10);
+// console.log(a.isfriend(1,8))
+//
+//
+// a.print()

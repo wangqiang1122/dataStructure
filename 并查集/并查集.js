@@ -72,7 +72,7 @@ function UFSets() {
     // 进行合并操作
     this.hebing = function () {
         //  [1,2],
-        for (var a =0;a<7;a++) {
+        for (var a =0;a<this.friends.length;a++) {
             var parentI =a;
             var [a1,a2] = this.friends[parentI];
             var z1 = this.find(a1);

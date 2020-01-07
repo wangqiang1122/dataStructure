@@ -92,7 +92,13 @@ function Minheap(size) {
        heap[0] = heap[cuur_size-1];
        // cuur_size-=1;
         --cuur_size;
-       shif_down(0,cuur_size-1); //cuur_size-1 删除完最后一个叶节点
+        var cuur_pos = Math.floor((cuur_size-1-1)/2); // 找到最后一个分支节点
+        console.log(cuur_pos);
+        while (cuur_pos>=0) {
+            shif_down(cuur_pos,cuur_size-1) // 把最后一个父节点和最后一个叶节点传过去   局部自上而下 向下调整
+            cuur_pos-=1                     // 调整分支节点
+        }
+       // shif_down(0,cuur_size-1); //cuur_size-1 删除完最后一个叶节点
        return min;
     }
     // 获取顶部元素
