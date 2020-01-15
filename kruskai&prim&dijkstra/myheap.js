@@ -116,6 +116,10 @@ function Minheap(size) {
     this.print = function () {
         return heap;
     }
+    // 个数
+    this.size = function () {
+        return cuur_size;
+    }
 }
 
 
