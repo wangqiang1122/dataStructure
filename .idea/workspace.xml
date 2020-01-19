@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e1bb39d-05a1-4d27-ac69-da07c5e75cee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/排序算法/二分查找法.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/排序算法/快速排序.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/排序算法/插入排序.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/排序算法/二分查找法查找当前数值的第一个大的数.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/排序算法/快速排序.js" beforeDir="false" afterPath="$PROJECT_DIR$/排序算法/快速排序.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,8 +95,8 @@
     <session id="399701292">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="28" />
-          <entry key="project.open.time.1" value="4" />
+          <entry key="project.closed" value="29" />
+          <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
@@ -113,48 +110,39 @@
           <entry key="project.open.time.33" value="2" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.opened" value="32" />
+          <entry key="project.opened" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
           <entry key="html" value="119" />
-          <entry key="js" value="143" />
+          <entry key="js" value="144" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
           <entry key="HTML" value="119" />
-          <entry key="JavaScript" value="143" />
+          <entry key="JavaScript" value="144" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="2827" />
-          <entry key="js" value="22580" />
+          <entry key="js" value="22878" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="2827" />
-          <entry key="JavaScript" value="22580" />
+          <entry key="JavaScript" value="22878" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kruskai&amp;prim&amp;/dijkstra.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kruskai&amp;prim&amp;dijkstra/dijkstra.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -190,7 +178,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/排序算法/快速排序.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-29">
+            <state relative-caret-position="15">
               <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
             </state>
           </provider>
@@ -205,11 +193,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/排序算法/二分查找法.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+            <state relative-caret-position="240">
+              <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/排序算法/二分查找法查找当前数值的第一个大的数.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -259,7 +256,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/heap/index4.html" />
         <option value="$PROJECT_DIR$/heap/新-最大堆.html" />
         <option value="$PROJECT_DIR$/heap/xin-最大.js" />
         <option value="$PROJECT_DIR$/AVLTree/demo2.html" />
@@ -310,6 +306,7 @@
         <option value="$PROJECT_DIR$/排序算法/插入排序.js" />
         <option value="$PROJECT_DIR$/排序算法/快速排序.html" />
         <option value="$PROJECT_DIR$/排序算法/二分查找法.js" />
+        <option value="$PROJECT_DIR$/排序算法/二分查找法查找当前数值的第一个大的数.js" />
       </list>
     </option>
   </component>
@@ -320,8 +317,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2064" />
-    <option name="y" value="-2" />
+    <option name="x" value="1873" />
+    <option name="y" value="126" />
     <option name="width" value="1160" />
     <option name="height" value="735" />
   </component>
@@ -334,22 +331,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="dataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="排序算法" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -366,6 +347,22 @@
               <item name="dataStructure" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="stack" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="dataStructure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataStructure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
+              <item name="排序算法" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -404,11 +401,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.快速排序.js">
+  <component name="RunManager" selected="Node.js.二分查找法查找当前数值的第一个大的数.js">
     <configuration name="Emmet1.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="Emmet1.js" working-dir="$PROJECT_DIR$/AVLTree">
       <method v="2" />
     </configuration>
     <configuration name="杨辉三角.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="杨辉三角.js" working-dir="$PROJECT_DIR$/queue">
+      <method v="2" />
+    </configuration>
+    <configuration name="二分查找法查找当前数值的第一个大的数.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="二分查找法查找当前数值的第一个大的数.js" working-dir="$PROJECT_DIR$/排序算法">
       <method v="2" />
     </configuration>
     <configuration name="快速排序.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="快速排序.js" working-dir="$PROJECT_DIR$/排序算法">
@@ -424,11 +424,11 @@
       <item itemvalue="Node.js.杨辉三角.js" />
       <item itemvalue="Node.js.hashMap.js" />
       <item itemvalue="Node.js.Emmet1.js" />
-      <item itemvalue="Node.js.快速排序.js" />
+      <item itemvalue="Node.js.二分查找法查找当前数值的第一个大的数.js" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.快速排序.js" />
+        <item itemvalue="Node.js.二分查找法查找当前数值的第一个大的数.js" />
         <item itemvalue="Node.js.hashMap.js" />
         <item itemvalue="Node.js.Emmet1.js" />
         <item itemvalue="Node.js.杨辉三角.js" />
@@ -505,29 +505,30 @@
       <workItem from="1578562449948" duration="769000" />
       <workItem from="1578621864885" duration="3860000" />
       <workItem from="1579169579079" duration="715000" />
-      <workItem from="1579241851662" duration="7422000" />
+      <workItem from="1579241851662" duration="7817000" />
+      <workItem from="1579414178763" duration="3907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="430366000" />
+    <option name="totallyTimeSpent" value="434668000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2078" y="26" width="1160" height="735" extended-state="0" />
+    <frame x="1873" y="126" width="1160" height="735" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1738367" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956383" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3281493" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3281493" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990307" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.281493" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.281493" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -541,9 +542,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/structure/数据结构之-bitmap.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/structure/数据结构之-bitmap1.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -805,16 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/排序算法/排序1.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/heap/权值测试.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="29" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/排序算法/归并排序.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -822,16 +810,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/排序算法/快速排序.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/排序算法/排序1.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/排序算法/快速排序.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29">
+        <state relative-caret-position="15">
           <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
@@ -843,10 +827,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/排序算法/快速排序.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heap/权值测试.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/排序算法/二分查找法.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        <state relative-caret-position="240">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/排序算法/二分查找法查找当前数值的第一个大的数.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
         </state>
       </provider>
     </entry>
