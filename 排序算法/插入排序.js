@@ -15,7 +15,7 @@ function insert_sort(arr,start,end ) {
   }
 }
 
-var arr = [7,2,8,1,4,6,9,3];
+var arr = [44,7,2,8,1,4,6,9,3,66];
 insert_sort(arr,0,arr.length-1); // 插入排序必须要求必须 从0开始 才能排序
 
 console.log(arr)

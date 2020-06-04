@@ -9,7 +9,8 @@ function bucket_sort(arr) {
     }
     // 放入对应的桶中
     for(var i=0;i<arr.length;i++) {
-        var index = Math.floor(arr[i]/3);
+        var index = Math.floor(arr[i]/100);buckets
+        console.log(buckets[index]);
         buckets[index].push(arr[i]);
     }
     // 对每个桶进行排序
@@ -26,4 +27,4 @@ function bucket_sort(arr) {
 }
 
 
-bucket_sort([7,2,8,1,4,6,9,3]);
+bucket_sort([99,77,7,2,8,1,4,6,9,3,5]);
